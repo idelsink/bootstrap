@@ -33,13 +33,24 @@ esac
 
 # Check if we are inside a git repository
 if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-  echo "Running inside the git repository. Continuing setup..."
   cd "$(git rev-parse --show-toplevel)" || { echo "Could not change to the git top level directory"; exit 1; }
 else
   tmpdir=$(mktemp --directory -t bootstrap-XXXXXX)
   echo "Not inside the git repository. Cloning to a temporary directory (${tmpdir})..."
+  echo
   git clone "${REPO_URL}" "${tmpdir}"
   cd "${tmpdir}" || { echo "Could not change to the git top level directory"; exit 1; }
 fi
 
-# Execute ansible...
+echo
+echo "System is ready to run ansible. Run the workstation playbook using:"
+echo
+echo "  cd $(pwd) && \\"
+echo "    ansible-playbook playbooks/workstation.yaml \\"
+echo "    --ask-become-pass \\"
+echo "    --inventory <inventory>"
+echo
+echo "  Where <inventory> is one of the following options:"
+echo
+ls -d inventories/*/ | awk '{print "    - " $0}'
+echo

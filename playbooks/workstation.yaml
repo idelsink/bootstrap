@@ -1,0 +1,5 @@
+# Playbook to deploy a generic workstation
+- name: Configure workstation
+  hosts: workstation
+  roles:
+    - idelsink.system-packages

@@ -17,5 +17,5 @@ This repository will help me bootstrap my machines (mostly workstations).
 
 ```sh
 # TODO: This is just a placeholder for now; Add checksum check before execution
-curl -sL dels.ink/bootstrap | bash
+curl -sL dels.ink/setup-workstation | bash
 ```
