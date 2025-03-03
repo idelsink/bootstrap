@@ -27,3 +27,18 @@ system_packages_dnf:
       - vim # Used as basic editor)
       - vim-default-editor # Set vim as default editor (in combination with nano being removed)
     state: present
+
+flatpak_remotes:
+  - name: flathub
+    state: present
+    method: system
+    flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
+
+flatpak_packages:
+  - name:
+      - com.spotify.Client
+      - com.discordapp.Discord
+      - org.telegram.desktop
+      - org.gnome.Extensions # Simple tool to quickly access Gnome extension Settings
+    method: system
+    remote: flathub
