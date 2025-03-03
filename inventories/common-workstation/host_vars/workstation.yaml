@@ -13,10 +13,9 @@ system_packages_copr_repositories:
   - name: lihaohong/chezmoi # Using COPR because chezmoi does not (yet?) provide a simple alternative for Fedora users https://github.com/twpayne/chezmoi/issues/1800
 
 system_packages_dnf:
-  # Remove nano as default editor
   - name:
       - nano
-      - nano-default-editor
+      - nano-default-editor # Remove nano as default editor
     state: absent
 
   - name:
