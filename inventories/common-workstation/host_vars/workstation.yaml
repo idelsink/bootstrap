@@ -1,6 +1,14 @@
 # Common workstation - A machine that does not need anything special or custom.
 
 # System packages
+system_packages_yum_repositories:
+  - name: keybase
+    description: Keybase - $basearch
+    baseurl: http://prerelease.keybase.io/rpm/$basearch
+    gpgkey: https://keybase.io/docs/server_security/code_signing_key.asc
+    gpgcheck: true
+    metadata_expire: 60
+
 system_packages_copr_repositories:
   - name: lihaohong/chezmoi # Using COPR because chezmoi does not (yet?) provide a simple alternative for Fedora users https://github.com/twpayne/chezmoi/issues/1800
 
@@ -12,6 +20,7 @@ system_packages_dnf:
     state: absent
 
   - name:
+      - keybase # Tool to store and retrieve GPG key(s)
       - adobe-source-code-pro-fonts # Font for source code that seems readable and appealing
       - chezmoi # Managing dotfiles - https://github.com/idelsink/dotfiles
       - powerline-go # Shell prompt of choice
