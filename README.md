@@ -22,7 +22,7 @@ This repository will help me bootstrap my machines (mostly workstations).
 # 2. Download the setup script and its signature
 # 3. Verify the signature and check the authenticity of the setup script
 PRIMARY_KEY="2490AACAD97245B59ACCB7A96BFF495F6EF46E6E" && \
-  curl -s https://keybase.io/binbash/key.asc | gpg --import
+  curl -s https://keybase.io/binbash/pgp_keys.asc | gpg --import
   curl -sL --remote-name-all \
     dels.ink/bootstrap/bin/setup-workstation.sh \
     dels.ink/bootstrap/bin/setup-workstation.sh.sig
