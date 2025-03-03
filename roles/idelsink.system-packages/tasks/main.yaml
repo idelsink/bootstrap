@@ -1,0 +1,2 @@
+- include_tasks: dnf.yaml
+  when: ansible_facts.pkg_mgr in ["yum", "dnf", "dnf5"]

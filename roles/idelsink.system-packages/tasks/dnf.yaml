@@ -1,0 +1,24 @@
+# Configure repos
+- name: Configure YUM repositories
+  become: true
+  yum_repository: "{{ item }}"
+  loop: "{{ system_packages_yum_repositories }}"
+  loop_control:
+    label: "{{ item.name }}"
+
+- name: Ensure COPR dependencies are installed when needed
+  when: system_packages_copr_repositories|length > 0
+  become: true
+  ansible.builtin.dnf:
+    name: dnf-plugins-core
+    state: present
+- name: Configure COPR repositories
+  become: true
+  community.general.copr: "{{ item }}"
+  loop: "{{ system_packages_copr_repositories }}"
+
+# Configure packages
+- name: Manage system packages using dnf
+  become: true
+  ansible.builtin.dnf: "{{ item }}"
+  loop: "{{ system_packages_dnf }}"

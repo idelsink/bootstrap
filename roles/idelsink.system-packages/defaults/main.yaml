@@ -1,2 +1,3 @@
+system_packages_copr_repositories: []
 system_packages_dnf: []
 system_packages_yum_repositories: []
