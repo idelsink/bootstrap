@@ -30,6 +30,8 @@ PRIMARY_KEY="2490AACAD97245B59ACCB7A96BFF495F6EF46E6E" && \
   chmod +x setup-workstation.sh && ./setup-workstation.sh
 ```
 
+4. Optionally configure dotfiles from [idelsink/dotfiles](https://github.com/idelsink/dotfiles)
+
 ## Signing `setup-workstation.sh`
 
 When the setup-workstation.sh script is updated, a new detached signature file needs to be generated so that the script can be validated when downloaded.
