@@ -1,0 +1,19 @@
+- name: Install flatpak
+  become: true
+  ansible.builtin.package:
+    name: flatpak
+    state: present
+
+- name: Configure flatpak remotes
+  become: "{{ item.method|default('system') == 'system' }}" # system method requires elevated permissions
+  community.general.flatpak_remote: "{{ item }}"
+  loop: "{{ flatpak_remotes }}"
+  loop_control:
+    label: "{{ item.name }} => {{ item.flatpakrepo_url }}"
+
+- name: Configure flatpak packages
+  become: "{{ item.method|default('system') == 'system' }}" # system method requires elevated permissions
+  community.general.flatpak: "{{ item }}"
+  loop: "{{ flatpak_packages }}"
+  loop_control:
+    label: "{{ item.name }}"
