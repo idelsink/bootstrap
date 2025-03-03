@@ -3,6 +3,14 @@ repos:
     rev: v2.2.0
     hooks:
       - id: doctoc
+        name: Doctoc (Table of Contents)
         args:
           - --notitle # Don't add a title to the ToC
           - --update-only # only update the existing ToC, don't auto insert ToCs
+  - repo: local
+    hooks:
+      - id: check-script-signatures
+        name: Check script signatures
+        entry: pre-commit-hooks/check-script-signatures.sh 2490AACAD97245B59ACCB7A96BFF495F6EF46E6E
+        language: script
+        files: ^bin/setup-.*\.(sh)$
