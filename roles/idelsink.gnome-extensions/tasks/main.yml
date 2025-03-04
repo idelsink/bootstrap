@@ -20,6 +20,7 @@
   loop_control:
     loop_var: gnome_extension
     label: "Fetching info for extension id {{ gnome_extension.id }}"
+  changed_when: no
 - name: Wait for all queries to complete
   ansible.builtin.async_status:
     jid: "{{ item.ansible_job_id }}"
@@ -33,14 +34,6 @@
   ansible.builtin.command: gnome-extensions list
   register: gnome_installed_extensions
   changed_when: no
-- name: Get enabled extensions
-  ansible.builtin.command: gnome-extensions list --enabled
-  register: gnome_enabled_extensions
-  changed_when: no
-- name: Get disabled extensions
-  ansible.builtin.command: gnome-extensions list --disabled
-  register: gnome_disabled_extensions
-  changed_when: no
 
 - name: "Install Gnome extension"
   vars:
@@ -51,14 +44,24 @@
     - (extension_info.uuid not in gnome_installed_extensions.stdout_lines) or item.force|default(false)
   command:
     argv:
-      - gnome-extensions
-      - install
-      - --force
-      - "{{ gnome_extensions_url }}{{ extension_info.download_url }}"
+      - gdbus
+      - call
+      - --session
+      - --dest
+      - org.gnome.Shell.Extensions
+      - --object-path
+      - /org/gnome/Shell/Extensions
+      - --method
+      - org.gnome.Shell.Extensions.InstallRemoteExtension
+      - "{{ extension_info.uuid }}"
   loop: "{{ gnome_extensions }}"
   loop_control:
     index_var: index
     label: "{{ extension_info.name }} ({{ item.id }})"
+  register: result
+  retries: 5
+  delay: 2
+  until: result is success
 
 - name: "Uninstall Gnome extension"
   vars:
@@ -68,13 +71,33 @@
     - (extension_info.uuid in gnome_installed_extensions.stdout_lines) or item.force|default(false)
   command:
     argv:
-      - gnome-extensions
-      - uninstall
+      - gdbus
+      - call
+      - --session
+      - --dest
+      - org.gnome.Shell.Extensions
+      - --object-path
+      - /org/gnome/Shell/Extensions
+      - --method
+      - org.gnome.Shell.Extensions.UninstallExtension
       - "{{ extension_info.uuid }}"
   loop: "{{ gnome_extensions }}"
   loop_control:
     index_var: index
     label: "{{ extension_info.name }} ({{ item.id }})"
+  register: result
+  retries: 5
+  delay: 2
+  until: result is success
+
+- name: Get enabled extensions
+  ansible.builtin.command: gnome-extensions list --enabled
+  register: gnome_enabled_extensions
+  changed_when: no
+- name: Get disabled extensions
+  ansible.builtin.command: gnome-extensions list --disabled
+  register: gnome_disabled_extensions
+  changed_when: no
 
 - name: "Enable Gnome extension"
   vars:
@@ -82,22 +105,26 @@
   when:
     - item.enabled|default(true)
     - extension_info.uuid not in gnome_enabled_extensions.stdout_lines
-  register: result
-  ignore_errors: true
-  failed_when:
-    - result.failed
-    # Can fail when extension is just installed. This is a 'feature' :(
-    # See: https://gitlab.gnome.org/GNOME/gnome-shell/-/issues/2513
-    - not result.msg or ' does not exist' not in result.msg
   command:
     argv:
-      - gnome-extensions
-      - enable
+      - gdbus
+      - call
+      - --session
+      - --dest
+      - org.gnome.Shell.Extensions
+      - --object-path
+      - /org/gnome/Shell/Extensions
+      - --method
+      - org.gnome.Shell.Extensions.EnableExtension
       - "{{ extension_info.uuid }}"
   loop: "{{ gnome_extensions }}"
   loop_control:
     index_var: index
     label: "{{ extension_info.name }} ({{ item.id }})"
+  register: result
+  retries: 5
+  delay: 2
+  until: result is success
 
 - name: "Disable Gnome extension"
   vars:
@@ -105,19 +132,23 @@
   when:
     - not item.enabled|default(true)
     - extension_info.uuid in gnome_enabled_extensions.stdout_lines
-  register: result
-  ignore_errors: true
-  failed_when:
-    - result.failed
-    # Can fail when extension is just installed. This is a 'feature' :(
-    # See: https://gitlab.gnome.org/GNOME/gnome-shell/-/issues/2513
-    - not result.msg or ' does not exist' not in result.msg
   command:
     argv:
-      - gnome-extensions
-      - disable
+      - gdbus
+      - call
+      - --session
+      - --dest
+      - org.gnome.Shell.Extensions
+      - --object-path
+      - /org/gnome/Shell/Extensions
+      - --method
+      - org.gnome.Shell.Extensions.DisableExtension
       - "{{ extension_info.uuid }}"
   loop: "{{ gnome_extensions }}"
   loop_control:
     index_var: index
     label: "{{ extension_info.name }} ({{ item.id }})"
+  register: result
+  retries: 5
+  delay: 2
+  until: result is success
