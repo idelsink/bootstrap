@@ -44,3 +44,19 @@ flatpak_packages:
       - org.gnome.Extensions # Simple tool to quickly access Gnome extension Settings
     method: system
     remote: flathub
+
+gnome_extensions:
+  - id: '0517' # Caffeine Disable the screensaver and auto suspend - https://extensions.gnome.org/extension/517/caffeine/
+  - id: '0600' # Launch new instance - https://extensions.gnome.org/extension/600/launch-new-instance/
+  - id: '0615' # AppIndicator and KStatusNotifierItem Support - https://extensions.gnome.org/extension/615/appindicator-support/
+  - id: '1007' # Window Is Ready - Notification Remover - https://extensions.gnome.org/extension/1007/window-is-ready-notification-remover/
+  - id: '1160' # Dash to Panel - https://extensions.gnome.org/extension/1160/dash-to-panel/
+  - id: '1401' # Bluetooth quick connect - https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/
+  - id: '2932' # Executor - https://extensions.gnome.org/extension/2932/executor/
+  - id: '4105' # Notification Banner Position - https://extensions.gnome.org/extension/4105/notification-banner-position/
+  - id: '6242' # Emoji Copy - https://extensions.gnome.org/extension/6242/emoji-copy/
+
+  - id: '0006' # Applications Menu - https://extensions.gnome.org/extension/6/applications-menu/
+    enabled: false
+  - id: '0008' # Places Status Indicator - https://extensions.gnome.org/extension/8/places-status-indicator/
+    enabled: false

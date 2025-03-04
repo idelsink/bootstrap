@@ -4,3 +4,4 @@
   roles:
     - idelsink.system-packages
     - idelsink.flatpak
+    - idelsink.gnome-extensions
