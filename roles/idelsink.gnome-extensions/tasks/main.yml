@@ -54,6 +54,7 @@
       - --method
       - org.gnome.Shell.Extensions.InstallRemoteExtension
       - "{{ extension_info.uuid }}"
+    creates: "{{ lookup('env', 'HOME') }}/.local/share/gnome-shell/extensions/{{ extension_info.uuid }}/"
   loop: "{{ gnome_extensions }}"
   loop_control:
     index_var: index
