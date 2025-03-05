@@ -30,6 +30,12 @@
   until: gnome_extension_info.finished
   loop: "{{ gnome_extension_info_request.results }}"
 
+# If we don't do this, then after 1 or 2 seconds when inituing a dbus call, the connection with the remote peer will be closed
+# `gdbus call --session ...` will throw a "Error: GDBus.Error:org.freedesktop.DBus.Error.NoReply: Remote peer disconnected" error
+- name: Activate org.gnome.Shell.Extensions and org.gnome.Shell.Extensions dbus
+  ansible.builtin.command: gdbus wait --session --activate org.gnome.Shell.Extensions --timeout 30 org.gnome.Shell.Extensions
+  changed_when: no
+
 - name: Get installed extensions
   ansible.builtin.command: gnome-extensions list
   register: gnome_installed_extensions
