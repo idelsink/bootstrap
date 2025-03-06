@@ -60,3 +60,5 @@ gnome_extensions:
     enabled: false
   - id: '0008' # Places Status Indicator - https://extensions.gnome.org/extension/8/places-status-indicator/
     enabled: false
+  - id: '7364' # Background Logo - https://extensions.gnome.org/extension/7364/background-logo/
+    enabled: false
