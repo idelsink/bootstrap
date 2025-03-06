@@ -23,10 +23,7 @@ See also:
     Main.extensionManager.loadExtension(extension);
     ```
 
-Realistcally, this will be run on the target system where we have access to the
-
-https://discourse.gnome.org/t/enable-gnome-extensions-without-session-restart/7936/9
-https://gist.github.com/piousdeer/1899b0b06a143af787528f4624ba3f0f
+Realistcally, this will be run on the target system where we have access to the UI so we can wait for the user's approval.
 
 ## Role variables
 
