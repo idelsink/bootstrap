@@ -20,14 +20,15 @@ system_packages_dnf:
 
   - name:
       - adobe-source-code-pro-fonts # Font for source code that seems readable and appealing
-      - chezmoi # Managing dotfiles - https://github.com/idelsink/dotfiles
-      - crudini # Tool to manipulate ini files - Used for example by chezmoi to export and backup dconf settings
-      - jq # CLI to manipulate json strings/files
-      - keybase # Tool to store and retrieve GPG key(s)
-      - powerline-go # Shell prompt of choice
-      - tmux # Terminal multiplexer of choice
-      - vim # Used as basic editor)
-      - vim-default-editor # Set vim as default editor (in combination with nano being removed)
+      - chezmoi                     # Managing dotfiles - https://github.com/idelsink/dotfiles
+      - crudini                     # Tool to manipulate ini files - Used for example by chezmoi to export and backup dconf settings
+      - htop                        #
+      - jq                          # CLI to manipulate json strings/files
+      - keybase                     # Tool to store and retrieve GPG key(s)
+      - powerline-go                # Shell prompt of choice
+      - tmux                        # Terminal multiplexer of choice
+      - vim                         # Used as basic editor)
+      - vim-default-editor          # Set vim as default editor (in combination with nano being removed)
     state: present
 
 flatpak_remotes:
