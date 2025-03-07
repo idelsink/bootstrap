@@ -14,22 +14,20 @@ This repository will help me bootstrap my machines (mostly workstations).
 
 1. Boot a [Fedora Workstation live image](https://fedoraproject.org/workstation/download) on the target system.
 2. Install and reboot.
-3. Run the setup script.
+3. Run the setup script. This snippet will:
+    1. Download the public key for key id: 6BFF495F6EF46E6E (https://keybase.io/binbash)
+    2. Download the setup script and its signature
+    3. Verify the signature and check the authenticity of the setup script
 
-```sh
-# This snippet will:
-# 1. Download the public key for key id: 6BFF495F6EF46E6E (https://keybase.io/binbash)
-# 2. Download the setup script and its signature
-# 3. Verify the signature and check the authenticity of the setup script
-PRIMARY_KEY="2490AACAD97245B59ACCB7A96BFF495F6EF46E6E" && \
-  curl -s https://keybase.io/binbash/pgp_keys.asc | gpg --import
-  curl -sL --remote-name-all \
-    dels.ink/bootstrap/bin/setup-workstation.sh \
-    dels.ink/bootstrap/bin/setup-workstation.sh.sig
-  gpg --assert-signer "${PRIMARY_KEY}" --verify setup-workstation.sh.sig setup-workstation.sh && \
-  chmod +x setup-workstation.sh && ./setup-workstation.sh
-```
-
+    ```sh
+    PRIMARY_KEY="2490AACAD97245B59ACCB7A96BFF495F6EF46E6E" && \
+      curl -s https://keybase.io/binbash/pgp_keys.asc | gpg --import
+      curl -sL --remote-name-all \
+        dels.ink/bootstrap/bin/setup-workstation.sh \
+        dels.ink/bootstrap/bin/setup-workstation.sh.sig
+      gpg --assert-signer "${PRIMARY_KEY}" --verify setup-workstation.sh.sig setup-workstation.sh && \
+      chmod +x setup-workstation.sh && ./setup-workstation.sh
+    ```
 4. Optionally configure dotfiles from [idelsink/dotfiles](https://github.com/idelsink/dotfiles)
 
 ## Signing `setup-workstation.sh`
