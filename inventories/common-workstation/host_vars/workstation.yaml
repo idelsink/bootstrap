@@ -37,13 +37,10 @@ flatpak_remotes:
     flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
 
 flatpak_packages:
-  - name:
-      - com.spotify.Client
-      - com.discordapp.Discord
-      - org.telegram.desktop
-      - org.gnome.Extensions # Simple tool to quickly access Gnome extension Settings
-    method: system
-    remote: flathub
+  - name: com.discordapp.Discord
+  - name: com.spotify.Client
+  - name: org.gnome.Extensions # Simple tool to quickly access Gnome extension Settings
+  - name: org.telegram.desktop
 
 gnome_extensions:
   - id: '0517' # Caffeine Disable the screensaver and auto suspend - https://extensions.gnome.org/extension/517/caffeine/
