@@ -2,6 +2,15 @@
 
 # System packages
 system_packages_yum_repositories:
+  # This repo is changed after installing keybase for the first time by keybase itself. It runs a
+  # post-install script if /etc/default/keybase is not present, this then overwrites some values
+  # in the repo file. This includes the name and baseurl (removing $basearch and replaceing it
+  # with a constant arch) So if this is run again a second time, it will update the file again
+  # once more, but only once. From that moment on it will not be updated unless the
+  # /etc/default/keybase file is removed and the keybase package is reinstalled.
+  # See also:
+  # - https://github.com/keybase/client/blob/ab3b3ec82851e3604bfca5642b7fdb8a30a72232/packaging/linux/rpm/cron.template#L225
+  # - https://github.com/keybase/client/issues/9756
   - name: keybase
     description: Keybase - $basearch
     baseurl: http://prerelease.keybase.io/rpm/$basearch
