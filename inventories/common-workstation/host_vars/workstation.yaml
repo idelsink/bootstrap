@@ -12,11 +12,25 @@ system_packages_yum_repositories:
   # - https://github.com/keybase/client/blob/ab3b3ec82851e3604bfca5642b7fdb8a30a72232/packaging/linux/rpm/cron.template#L225
   # - https://github.com/keybase/client/issues/9756
   - name: keybase
-    description: Keybase - $basearch
+    description: Keybase $releasever - $basearch
     baseurl: http://prerelease.keybase.io/rpm/$basearch
     gpgkey: https://keybase.io/docs/server_security/code_signing_key.asc
     gpgcheck: true
     metadata_expire: 60
+  # Terra repository
+  # This is only used becaue zed is not yet available in the official Fedora repositories
+  # https://github.com/zed-industries/zed/discussions/25635
+  # Zed's offical suggestion is to use the terra repository
+  - name: terra
+    description: Terra $releasever - $basearch
+    #baseurl=https://repos.fyralabs.com/terra$releasever
+    metalink: https://tetsudou.fyralabs.com/metalink?repo=terra$releasever&arch=$basearch
+    metadata_expire: "6h"
+    gpgcheck: true
+    gpgkey: https://repos.fyralabs.com/terra$releasever/key.asc
+    repo_gpgcheck: true
+    includepkgs:
+      - zed
 
 system_packages_copr_repositories:
   - name: lihaohong/chezmoi # Using COPR because chezmoi does not (yet?) provide a simple alternative for Fedora users https://github.com/twpayne/chezmoi/issues/1800
@@ -29,15 +43,16 @@ system_packages_dnf:
 
   - name:
       - adobe-source-code-pro-fonts # Font for source code that seems readable and appealing
-      - chezmoi                     # Managing dotfiles - https://github.com/idelsink/dotfiles
-      - crudini                     # Tool to manipulate ini files - Used for example by chezmoi to export and backup dconf settings
-      - htop                        #
-      - jq                          # CLI to manipulate json strings/files
-      - keybase                     # Tool to store and retrieve GPG key(s)
-      - powerline-go                # Shell prompt of choice
-      - tmux                        # Terminal multiplexer of choice
-      - vim                         # Used as basic editor)
-      - vim-default-editor          # Set vim as default editor (in combination with nano being removed)
+      - chezmoi # Managing dotfiles - https://github.com/idelsink/dotfiles
+      - crudini # Tool to manipulate ini files - Used for example by chezmoi to export and backup dconf settings
+      - htop #
+      - jq # CLI to manipulate json strings/files
+      - keybase # Tool to store and retrieve GPG key(s)
+      - powerline-go # Shell prompt of choice
+      - tmux # Terminal multiplexer of choice
+      - vim # Used as basic editor)
+      - vim-default-editor # Set vim as default editor (in combination with nano being removed)
+      - zed # Zed text editor
     state: present
 
 flatpak_remotes:
