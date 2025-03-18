@@ -35,11 +35,17 @@ esac
 if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   cd "$(git rev-parse --show-toplevel)" || { echo "Could not change to the git top level directory"; exit 1; }
 else
-  tmpdir=$(mktemp --directory -t bootstrap-XXXXXX)
-  echo "Not inside the git repository. Cloning to a temporary directory (${tmpdir})..."
-  echo
-  git clone "${REPO_URL}" "${tmpdir}"
-  cd "${tmpdir}" || { echo "Could not change to the git top level directory"; exit 1; }
+  bootstrap_dir="${HOME}/bootstrap"
+
+  if [[ -d "${bootstrap_dir}/.git" ]] && git -C "${bootstrap_dir}" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    echo "Bootstrap directory already contains a valid Git repository."
+  else
+    echo "Not inside a git repository and bootstrap directory is missing or invalid..."
+    mkdir -p "${bootstrap_dir}"
+    git clone "${REPO_URL}" "${bootstrap_dir}" || { echo "Failed to clone repository"; exit 1; }
+  fi
+
+  cd "${bootstrap_dir}" || { echo "Could not change to the git top level directory"; exit 1; }
 fi
 
 echo
