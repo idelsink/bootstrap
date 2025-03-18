@@ -49,6 +49,7 @@ system_packages_dnf:
       - jq # CLI to manipulate json strings/files
       - keybase # Tool to store and retrieve GPG key(s)
       - powerline-go # Shell prompt of choice
+      - shellcheck # ShellCheck used by code editors for static analysis
       - tmux # Terminal multiplexer of choice
       - vim # Used as basic editor)
       - vim-default-editor # Set vim as default editor (in combination with nano being removed)
