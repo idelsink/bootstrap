@@ -45,6 +45,7 @@ system_packages_dnf:
       - adobe-source-code-pro-fonts # Font for source code that seems readable and appealing
       - chezmoi # Managing dotfiles - https://github.com/idelsink/dotfiles
       - crudini # Tool to manipulate ini files - Used for example by chezmoi to export and backup dconf settings
+      - flat-remix-icon-theme # Flat Remix icon theme https://github.com/daniruiz/flat-remix
       - gnome-tweaks # Gnome tweaks for customizing the desktop (and checking settings)
       - htop #
       - jq # CLI to manipulate json strings/files
