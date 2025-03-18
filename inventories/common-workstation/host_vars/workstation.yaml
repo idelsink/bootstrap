@@ -4,7 +4,7 @@
 system_packages_yum_repositories:
   # This repo is changed after installing keybase for the first time by keybase itself. It runs a
   # post-install script if /etc/default/keybase is not present, this then overwrites some values
-  # in the repo file. This includes the name and baseurl (removing $basearch and replaceing it
+  # in the repo file. This includes the name and baseurl (removing $basearch and replacing it
   # with a constant arch) So if this is run again a second time, it will update the file again
   # once more, but only once. From that moment on it will not be updated unless the
   # /etc/default/keybase file is removed and the keybase package is reinstalled.
@@ -71,19 +71,19 @@ flatpak_packages:
   - name: org.telegram.desktop
 
 gnome_extensions:
-  - id: '0517' # Caffeine Disable the screensaver and auto suspend - https://extensions.gnome.org/extension/517/caffeine/
-  - id: '0600' # Launch new instance - https://extensions.gnome.org/extension/600/launch-new-instance/
-  - id: '0615' # AppIndicator and KStatusNotifierItem Support - https://extensions.gnome.org/extension/615/appindicator-support/
-  - id: '1007' # Window Is Ready - Notification Remover - https://extensions.gnome.org/extension/1007/window-is-ready-notification-remover/
-  - id: '1160' # Dash to Panel - https://extensions.gnome.org/extension/1160/dash-to-panel/
-  - id: '1401' # Bluetooth quick connect - https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/
-  - id: '2932' # Executor - https://extensions.gnome.org/extension/2932/executor/
-  - id: '4105' # Notification Banner Position - https://extensions.gnome.org/extension/4105/notification-banner-position/
-  - id: '6242' # Emoji Copy - https://extensions.gnome.org/extension/6242/emoji-copy/
+  - id: "0517" # Caffeine Disable the screensaver and auto suspend - https://extensions.gnome.org/extension/517/caffeine/
+  - id: "0600" # Launch new instance - https://extensions.gnome.org/extension/600/launch-new-instance/
+  - id: "0615" # AppIndicator and KStatusNotifierItem Support - https://extensions.gnome.org/extension/615/appindicator-support/
+  - id: "1007" # Window Is Ready - Notification Remover - https://extensions.gnome.org/extension/1007/window-is-ready-notification-remover/
+  - id: "1160" # Dash to Panel - https://extensions.gnome.org/extension/1160/dash-to-panel/
+  - id: "1401" # Bluetooth quick connect - https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/
+  - id: "2932" # Executor - https://extensions.gnome.org/extension/2932/executor/
+  - id: "4105" # Notification Banner Position - https://extensions.gnome.org/extension/4105/notification-banner-position/
+  - id: "6242" # Emoji Copy - https://extensions.gnome.org/extension/6242/emoji-copy/
 
-  - id: '0006' # Applications Menu - https://extensions.gnome.org/extension/6/applications-menu/
+  - id: "0006" # Applications Menu - https://extensions.gnome.org/extension/6/applications-menu/
     enabled: false
-  - id: '0008' # Places Status Indicator - https://extensions.gnome.org/extension/8/places-status-indicator/
+  - id: "0008" # Places Status Indicator - https://extensions.gnome.org/extension/8/places-status-indicator/
     enabled: false
-  - id: '7364' # Background Logo - https://extensions.gnome.org/extension/7364/background-logo/
+  - id: "7364" # Background Logo - https://extensions.gnome.org/extension/7364/background-logo/
     enabled: false
