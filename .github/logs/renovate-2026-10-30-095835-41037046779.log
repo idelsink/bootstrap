@@ -1,0 +1,791 @@
+[2026-10-30T09:57:55.375Z] [command]/usr/bin/docker run --rm --volume /home/runner/work/renovate-runner/renovate-runner/config.js:/usr/src/app/config.js:ro --volume /home/runner/work/_temp/renovate-cache/renovate/repository:/tmp/renovate/cache/renovate/repository --env RENOVATE_RUNNER_REPO --env RENOVATE_TOKEN --env RENOVATE_REPOSITORIES --env LOG_LEVEL --env CI ghcr.io/renovatebot/renovate:44.198.0@sha256:9ace7c60234605b242fa7edf44f77a70a17f3b0e963e8e969bd59341a5b4295d
+[2026-10-30T09:57:55.453Z] Unable to find image 'ghcr.io/renovatebot/renovate:44.198.0@sha256:9ace7c60234605b242fa7edf44f77a70a17f3b0e963e8e969bd59341a5b4295d' locally
+[2026-10-30T09:57:56.101Z] ghcr.io/renovatebot/renovate@sha256:9ace7c60234605b242fa7edf44f77a70a17f3b0e963e8e969bd59341a5b4295d: Pulling from renovatebot/renovate
+[2026-10-30T09:57:56.311Z] 7a48b8f0e5c7: Pulling fs layer
+[2026-10-30T09:57:56.311Z] bf5f23aafe89: Pulling fs layer
+[2026-10-30T09:57:56.311Z] 9caeb2c9b0be: Pulling fs layer
+[2026-10-30T09:57:56.311Z] 2410fdf29426: Pulling fs layer
+[2026-10-30T09:57:56.311Z] 6c324a26f445: Pulling fs layer
+[2026-10-30T09:57:56.311Z] 4b624c614056: Pulling fs layer
+[2026-10-30T09:57:56.311Z] 2be9525b2226: Pulling fs layer
+[2026-10-30T09:57:56.311Z] d71565722191: Pulling fs layer
+[2026-10-30T09:57:56.311Z] cde406f98df7: Pulling fs layer
+[2026-10-30T09:57:56.311Z] 7650ba84d437: Pulling fs layer
+[2026-10-30T09:57:56.311Z] d5a7cded1aa7: Pulling fs layer
+[2026-10-30T09:57:56.311Z] 26f18218d114: Pulling fs layer
+[2026-10-30T09:57:56.311Z] 4f4fb700ef54: Pulling fs layer
+[2026-10-30T09:57:56.311Z] 6c324a26f445: Waiting
+[2026-10-30T09:57:56.311Z] 4b624c614056: Waiting
+[2026-10-30T09:57:56.311Z] 2be9525b2226: Waiting
+[2026-10-30T09:57:56.311Z] d71565722191: Waiting
+[2026-10-30T09:57:56.311Z] cde406f98df7: Waiting
+[2026-10-30T09:57:56.311Z] 7650ba84d437: Waiting
+[2026-10-30T09:57:56.311Z] d5a7cded1aa7: Waiting
+[2026-10-30T09:57:56.311Z] 26f18218d114: Waiting
+[2026-10-30T09:57:56.311Z] 4f4fb700ef54: Waiting
+[2026-10-30T09:57:56.311Z] 2410fdf29426: Waiting
+[2026-10-30T09:57:56.534Z] bf5f23aafe89: Verifying Checksum
+[2026-10-30T09:57:56.534Z] bf5f23aafe89: Download complete
+[2026-10-30T09:57:56.674Z] 7a48b8f0e5c7: Download complete
+[2026-10-30T09:57:56.717Z] 9caeb2c9b0be: Verifying Checksum
+[2026-10-30T09:57:56.718Z] 9caeb2c9b0be: Download complete
+[2026-10-30T09:57:56.898Z] 2410fdf29426: Verifying Checksum
+[2026-10-30T09:57:56.898Z] 2410fdf29426: Download complete
+[2026-10-30T09:57:57.026Z] 6c324a26f445: Verifying Checksum
+[2026-10-30T09:57:57.026Z] 6c324a26f445: Download complete
+[2026-10-30T09:57:57.228Z] 2be9525b2226: Verifying Checksum
+[2026-10-30T09:57:57.228Z] 2be9525b2226: Download complete
+[2026-10-30T09:57:57.261Z] d71565722191: Verifying Checksum
+[2026-10-30T09:57:57.261Z] d71565722191: Download complete
+[2026-10-30T09:57:57.445Z] cde406f98df7: Download complete
+[2026-10-30T09:57:57.460Z] 4b624c614056: Verifying Checksum
+[2026-10-30T09:57:57.460Z] 4b624c614056: Download complete
+[2026-10-30T09:57:57.672Z] d5a7cded1aa7: Verifying Checksum
+[2026-10-30T09:57:57.672Z] d5a7cded1aa7: Download complete
+[2026-10-30T09:57:57.687Z] 26f18218d114: Verifying Checksum
+[2026-10-30T09:57:57.687Z] 26f18218d114: Download complete
+[2026-10-30T09:57:57.717Z] 7a48b8f0e5c7: Pull complete
+[2026-10-30T09:57:57.733Z] 7650ba84d437: Verifying Checksum
+[2026-10-30T09:57:57.733Z] 7650ba84d437: Download complete
+[2026-10-30T09:57:57.889Z] 4f4fb700ef54: Verifying Checksum
+[2026-10-30T09:57:57.889Z] 4f4fb700ef54: Download complete
+[2026-10-30T09:58:02.150Z] bf5f23aafe89: Pull complete
+[2026-10-30T09:58:03.497Z] 9caeb2c9b0be: Pull complete
+[2026-10-30T09:58:04.359Z] 2410fdf29426: Pull complete
+[2026-10-30T09:58:05.400Z] 6c324a26f445: Pull complete
+[2026-10-30T09:58:13.077Z] 4b624c614056: Pull complete
+[2026-10-30T09:58:13.524Z] 2be9525b2226: Pull complete
+[2026-10-30T09:58:13.537Z] d71565722191: Pull complete
+[2026-10-30T09:58:13.549Z] cde406f98df7: Pull complete
+[2026-10-30T09:58:25.717Z] 7650ba84d437: Pull complete
+[2026-10-30T09:58:25.727Z] d5a7cded1aa7: Pull complete
+[2026-10-30T09:58:25.744Z] 26f18218d114: Pull complete
+[2026-10-30T09:58:25.752Z] 4f4fb700ef54: Pull complete
+[2026-10-30T09:58:25.757Z] Digest: sha256:9ace7c60234605b242fa7edf44f77a70a17f3b0e963e8e969bd59341a5b4295d
+[2026-10-30T09:58:25.758Z] Status: Downloaded newer image for ghcr.io/renovatebot/renovate@sha256:9ace7c60234605b242fa7edf44f77a70a17f3b0e963e8e969bd59341a5b4295d
+[2026-10-30T09:58:28.097Z]  INFO: Renovate started
+[2026-10-30T09:58:28.097Z]        "renovateVersion": "44.198.0"
+[2026-10-30T09:58:28.097Z] DEBUG: Using RE2 regex engine
+[2026-10-30T09:58:28.098Z] DEBUG: Parsing configs
+[2026-10-30T09:58:28.102Z] DEBUG: Checking for config file in config.js
+[2026-10-30T09:58:28.117Z] DEBUG: No additional config file found specified - skipping
+[2026-10-30T09:58:28.134Z] DEBUG: File config
+[2026-10-30T09:58:28.134Z]        "config": {
+[2026-10-30T09:58:28.134Z]          "platform": "github",
+[2026-10-30T09:58:28.134Z]          "repositoryCache": "enabled",
+[2026-10-30T09:58:28.134Z]          "allowedUnsafeExecutions": ["mise"],
+[2026-10-30T09:58:28.134Z]          "dependencyDashboardFooter": "- [ ] <!-- trigger-run --> Trigger a Renovate run - [workflow runs & logs ↗](https://github.com/idelsink/renovate-runner/actions/workflows/renovate.yaml)",
+[2026-10-30T09:58:28.134Z]          "onboardingConfig": {
+[2026-10-30T09:58:28.134Z]            "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+[2026-10-30T09:58:28.134Z]            "extends": ["github>idelsink/renovate-runner"]
+[2026-10-30T09:58:28.134Z]          }
+[2026-10-30T09:58:28.134Z]        }
+[2026-10-30T09:58:28.134Z] DEBUG: Additional file config
+[2026-10-30T09:58:28.134Z]        "config": {}
+[2026-10-30T09:58:28.134Z] DEBUG: CLI config
+[2026-10-30T09:58:28.134Z]        "config": {}
+[2026-10-30T09:58:28.134Z] DEBUG: Env config
+[2026-10-30T09:58:28.135Z]        "config": {
+[2026-10-30T09:58:28.135Z]          "hostRules": [],
+[2026-10-30T09:58:28.135Z]          "token": "***********",
+[2026-10-30T09:58:28.135Z]          "repositories": ["idelsink/bootstrap"]
+[2026-10-30T09:58:28.135Z]        }
+[2026-10-30T09:58:28.135Z] DEBUG: Resolved global extends
+[2026-10-30T09:58:28.135Z]        "config": undefined
+[2026-10-30T09:58:28.135Z] DEBUG: Combined config
+[2026-10-30T09:58:28.135Z]        "config": {
+[2026-10-30T09:58:28.135Z]          "platform": "github",
+[2026-10-30T09:58:28.135Z]          "repositoryCache": "enabled",
+[2026-10-30T09:58:28.135Z]          "allowedUnsafeExecutions": ["mise"],
+[2026-10-30T09:58:28.135Z]          "dependencyDashboardFooter": "- [ ] <!-- trigger-run --> Trigger a Renovate run - [workflow runs & logs ↗](https://github.com/idelsink/renovate-runner/actions/workflows/renovate.yaml)",
+[2026-10-30T09:58:28.135Z]          "onboardingConfig": {
+[2026-10-30T09:58:28.135Z]            "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+[2026-10-30T09:58:28.135Z]            "extends": ["github>idelsink/renovate-runner"]
+[2026-10-30T09:58:28.135Z]          },
+[2026-10-30T09:58:28.135Z]          "hostRules": [],
+[2026-10-30T09:58:28.135Z]          "token": "***********",
+[2026-10-30T09:58:28.135Z]          "repositories": ["idelsink/bootstrap"]
+[2026-10-30T09:58:28.135Z]        }
+[2026-10-30T09:58:28.135Z] DEBUG: Enabling forkProcessing while in non-autodiscover mode
+[2026-10-30T09:58:28.136Z] DEBUG: Enabling onboardingNoDeps while in non-autodiscover mode
+[2026-10-30T09:58:28.149Z] DEBUG: Found valid git version: 2.56.0
+[2026-10-30T09:58:28.150Z] DEBUG: Containerbase image version is compatible
+[2026-10-30T09:58:28.150Z]        "version": "14.57.1"
+[2026-10-30T09:58:28.150Z] DEBUG: Setting global hostRules
+[2026-10-30T09:58:28.155Z] DEBUG: Using default github endpoint: https://api.github.com/
+[2026-10-30T09:58:28.163Z] DEBUG: hostRules: authentication already set for api.github.com
+[2026-10-30T09:58:28.167Z] DEBUG: Using queue: host=api.github.com, concurrency=16
+[2026-10-30T09:58:28.510Z] DEBUG: Platform config
+[2026-10-30T09:58:28.510Z]        "platformConfig": {
+[2026-10-30T09:58:28.510Z]          "host": {"type": "github", "apiUrl": {}},
+[2026-10-30T09:58:28.510Z]          "isGHApp": true,
+[2026-10-30T09:58:28.510Z]          "userDetails": {
+[2026-10-30T09:58:28.510Z]            "username": "renovate-iws[bot]",
+[2026-10-30T09:58:28.510Z]            "name": "renovate-iws[bot]",
+[2026-10-30T09:58:28.510Z]            "id": 260228940,
+[2026-10-30T09:58:28.510Z]            "email": null
+[2026-10-30T09:58:28.510Z]          }
+[2026-10-30T09:58:28.510Z]        },
+[2026-10-30T09:58:28.510Z]        "renovateUsername": "renovate-iws[bot]"
+[2026-10-30T09:58:28.513Z] DEBUG: Using platform gitAuthor: renovate-iws[bot] <260228940+renovate-iws[bot]@users.noreply.github.com>
+[2026-10-30T09:58:28.515Z] DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+[2026-10-30T09:58:28.516Z] DEBUG: Using baseDir: /tmp/renovate
+[2026-10-30T09:58:28.517Z] DEBUG: Using cacheDir: /tmp/renovate/cache
+[2026-10-30T09:58:28.517Z] DEBUG: Using containerbaseDir: /tmp/renovate/cache/containerbase
+[2026-10-30T09:58:28.518Z] DEBUG: Initializing Renovate internal cache into /tmp/renovate/cache/renovate/renovate-cache-v1
+[2026-10-30T09:58:28.518Z] DEBUG: Commits limit = null
+[2026-10-30T09:58:28.518Z] DEBUG: Setting global hostRules
+[2026-10-30T09:58:28.522Z] DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+[2026-10-30T09:58:28.522Z] DEBUG: validatePresets()
+[2026-10-30T09:58:28.535Z] DEBUG: Reinitializing hostRules for repo
+[2026-10-30T09:58:28.535Z] DEBUG: Clearing hostRules
+[2026-10-30T09:58:28.538Z] DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+[2026-10-30T09:58:28.540Z]  INFO: Repository started (repository=idelsink/bootstrap)
+[2026-10-30T09:58:28.540Z]        "renovateVersion": "44.198.0"
+[2026-10-30T09:58:28.540Z] DEBUG: Using localDir: /tmp/renovate/repos/github/idelsink/bootstrap (repository=idelsink/bootstrap)
+[2026-10-30T09:58:28.541Z] DEBUG: PackageFiles.clear() - Package files deleted (repository=idelsink/bootstrap)
+[2026-10-30T09:58:28.543Z] DEBUG: initRepo("idelsink/bootstrap") (repository=idelsink/bootstrap)
+[2026-10-30T09:58:28.545Z] DEBUG: hostRules: authentication already set for api.github.com (repository=idelsink/bootstrap)
+[2026-10-30T09:58:28.545Z] DEBUG: Using queue: host=api.github.com, concurrency=16 (repository=idelsink/bootstrap)
+[2026-10-30T09:58:28.864Z] DEBUG: idelsink/bootstrap default branch = main (repository=idelsink/bootstrap)
+[2026-10-30T09:58:28.865Z] DEBUG: Issues cache: Adding 1 issues to reconcile queue (repository=idelsink/bootstrap)
+[2026-10-30T09:58:28.865Z] DEBUG: Using app token for git init (repository=idelsink/bootstrap)
+[2026-10-30T09:58:28.867Z] DEBUG: fetchBranchCommits(): url=https://**redacted**@github.com/idelsink/bootstrap.git (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.183Z] DEBUG: Repository cache is restored from revision 13 (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.183Z] DEBUG: Resetting npmrc (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.183Z] DEBUG: Resetting npmrc (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.184Z] DEBUG: checkOnboarding() (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.184Z] DEBUG: isOnboarded() (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.185Z] DEBUG: findPr(renovate/configure, Configure Renovate, !open) (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.185Z] DEBUG: PR cache: sync fetch (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.565Z] DEBUG: http cache: saving https://api.github.com/repos/idelsink/bootstrap/pulls?per_page=20&state=all&sort=updated&direction=desc&page=1 (etag=W/"743da068db0361ea0f021ff595549a7623a6e758f2a9243bedff96b70bb21bb3", lastModified=undefined) (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.566Z] DEBUG: PR cache: Filtered 1 PRs to 1 (user=renovate-iws[bot]) (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.571Z] DEBUG: PR cache: getPrList success (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.571Z]        "pullsTotal": 1,
+[2026-10-30T09:58:29.571Z]        "requestsTotal": 1,
+[2026-10-30T09:58:29.571Z]        "apiQuotaAffected": true,
+[2026-10-30T09:58:29.571Z]        "durationMs": 385
+[2026-10-30T09:58:29.571Z] DEBUG: Found PR #1 (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.572Z] DEBUG: Checking cached config file name (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.770Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/bootstrap/contents/renovate.json from 2026-10-29T09:53:53.748Z (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.772Z] DEBUG: Existing config file confirmed (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.773Z] DEBUG: Repository config (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.773Z]        "fileName": "renovate.json",
+[2026-10-30T09:58:29.773Z]        "config": {
+[2026-10-30T09:58:29.773Z]          "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+[2026-10-30T09:58:29.773Z]          "extends": ["github>idelsink/renovate-runner"]
+[2026-10-30T09:58:29.773Z]        }
+[2026-10-30T09:58:29.773Z] DEBUG: Repo is onboarded (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.978Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/bootstrap/contents/renovate.json from 2026-10-30T09:58:29.769Z (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.979Z] DEBUG: migrateAndValidate() (repository=idelsink/bootstrap)
+[2026-10-30T09:58:29.979Z] DEBUG: No config migration necessary (repository=idelsink/bootstrap)
+[2026-10-30T09:58:30.193Z] DEBUG: http cache: saving https://api.github.com/repos/idelsink/renovate-runner/contents/default.json (etag="81ffdd5edeec1405bd2e0ef58364984a10f973dc", lastModified=Fri, 30 Oct 2026 09:56:05 GMT) (repository=idelsink/bootstrap)
+[2026-10-30T09:58:30.202Z] DEBUG: Resolved shallow config, without merging internal presets (repository=idelsink/bootstrap)
+[2026-10-30T09:58:30.202Z]        "renovateVersion": "44.198.0",
+[2026-10-30T09:58:30.202Z]        "config": {
+[2026-10-30T09:58:30.202Z]          "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+[2026-10-30T09:58:30.202Z]          "schedule": ["before 6am on Monday"],
+[2026-10-30T09:58:30.202Z]          "prConcurrentLimit": 5,
+[2026-10-30T09:58:30.202Z]          "customManagers": [
+[2026-10-30T09:58:30.202Z]            {
+[2026-10-30T09:58:30.202Z]              "customType": "regex",
+[2026-10-30T09:58:30.202Z]              "description": [
+[2026-10-30T09:58:30.202Z]                "Container image references with digest pinning (registry/image:1.2.3@shaabc123...), annotated with # renovate: or // renovate:. Captures tag as currentValue and sha256 as currentDigest for atomic updates."
+[2026-10-30T09:58:30.202Z]              ],
+[2026-10-30T09:58:30.202Z]              "managerFilePatterns": ["/./"],
+[2026-10-30T09:58:30.202Z]              "matchStrings": [
+[2026-10-30T09:58:30.202Z]                "(?:#|//) renovate: datasource=(?<datasource>.*?)(?: depName=(?<depName>.+?))?(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?(?: extractVersion=(?<extractVersion>.+?))?(?: registryUrl=(?<registryUrl>.+?))?\\n\\s*[^=:\\n]+[=:]\\s*[\"']?[^:]+:(?<currentValue>[^\\s@\"']+)@(?<currentDigest>[^\\s\"']+)"
+[2026-10-30T09:58:30.202Z]              ],
+[2026-10-30T09:58:30.202Z]              "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver-coerced{{/if}}"
+[2026-10-30T09:58:30.202Z]            },
+[2026-10-30T09:58:30.202Z]            {
+[2026-10-30T09:58:30.202Z]              "customType": "regex",
+[2026-10-30T09:58:30.202Z]              "description": [
+[2026-10-30T09:58:30.202Z]                "Container image references with tag only (no digest), annotated with # renovate: or // renovate:. Matches key-value lines where the value is a registry/path:tag."
+[2026-10-30T09:58:30.202Z]              ],
+[2026-10-30T09:58:30.202Z]              "managerFilePatterns": ["/./"],
+[2026-10-30T09:58:30.202Z]              "matchStrings": [
+[2026-10-30T09:58:30.202Z]                "(?:#|//) renovate: datasource=(?<datasource>.*?)(?: depName=(?<depName>.+?))?(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?(?: extractVersion=(?<extractVersion>.+?))?(?: registryUrl=(?<registryUrl>.+?))?\\n\\s*[^=:\\n]+[=:]\\s*[\"']?[^:]+:(?<currentValue>[^\\s@\"']+)(?:[\"'\\s]|$)"
+[2026-10-30T09:58:30.202Z]              ],
+[2026-10-30T09:58:30.202Z]              "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver-coerced{{/if}}"
+[2026-10-30T09:58:30.202Z]            },
+[2026-10-30T09:58:30.202Z]            {
+[2026-10-30T09:58:30.202Z]              "customType": "regex",
+[2026-10-30T09:58:30.202Z]              "description": [
+[2026-10-30T09:58:30.202Z]                "Plain version strings annotated with # renovate: or // renovate:. Handles both assignment (KEY=) and key-value (key:) styles for any datasource."
+[2026-10-30T09:58:30.202Z]              ],
+[2026-10-30T09:58:30.202Z]              "managerFilePatterns": ["/./"],
+[2026-10-30T09:58:30.202Z]              "matchStrings": [
+[2026-10-30T09:58:30.202Z]                "(?:#|//) renovate: datasource=(?<datasource>.*?)(?: depName=(?<depName>.+?))?(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?(?: extractVersion=(?<extractVersion>.+?))?(?: registryUrl=(?<registryUrl>.+?))?\\n\\s*[^=:\\n]+[=:]\\s*[\"']?(?<currentValue>[^\\s@\"'#:]+)(?:[\"'\\s]|$)"
+[2026-10-30T09:58:30.202Z]              ],
+[2026-10-30T09:58:30.202Z]              "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver-coerced{{/if}}"
+[2026-10-30T09:58:30.202Z]            }
+[2026-10-30T09:58:30.202Z]          ],
+[2026-10-30T09:58:30.202Z]          "packageRules": [
+[2026-10-30T09:58:30.202Z]            {
+[2026-10-30T09:58:30.202Z]              "description": [
+[2026-10-30T09:58:30.202Z]                "Ensure github-actions inline comments always use full vX.Y.Z semver tags"
+[2026-10-30T09:58:30.202Z]              ],
+[2026-10-30T09:58:30.202Z]              "matchManagers": ["github-actions"],
+[2026-10-30T09:58:30.202Z]              "matchDepTypes": ["action"],
+[2026-10-30T09:58:30.202Z]              "extractVersion": "^(?<version>v?\\d+\\.\\d+\\.\\d+)$",
+[2026-10-30T09:58:30.202Z]              "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$"
+[2026-10-30T09:58:30.202Z]            },
+[2026-10-30T09:58:30.202Z]            {
+[2026-10-30T09:58:30.202Z]              "description": [
+[2026-10-30T09:58:30.202Z]                "Disable digest pinning for regex manager deps without a currentDigest capture group"
+[2026-10-30T09:58:30.202Z]              ],
+[2026-10-30T09:58:30.202Z]              "matchManagers": ["custom.regex"],
+[2026-10-30T09:58:30.202Z]              "matchUpdateTypes": ["pin", "pinDigest"],
+[2026-10-30T09:58:30.202Z]              "enabled": false
+[2026-10-30T09:58:30.202Z]            },
+[2026-10-30T09:58:30.202Z]            {
+[2026-10-30T09:58:30.202Z]              "description": ["Disable digest pinning for kustomize OCI helmCharts"],
+[2026-10-30T09:58:30.202Z]              "matchManagers": ["kustomize"],
+[2026-10-30T09:58:30.202Z]              "matchDepTypes": ["HelmChart"],
+[2026-10-30T09:58:30.202Z]              "matchUpdateTypes": ["pin", "pinDigest"],
+[2026-10-30T09:58:30.202Z]              "enabled": false
+[2026-10-30T09:58:30.202Z]            }
+[2026-10-30T09:58:30.202Z]          ]
+[2026-10-30T09:58:30.202Z]        },
+[2026-10-30T09:58:30.202Z]        "visitedPresets": {
+[2026-10-30T09:58:30.203Z]          "merged": ["github>idelsink/renovate-runner"],
+[2026-10-30T09:58:30.203Z]          "unmerged": ["config:best-practices"]
+[2026-10-30T09:58:30.203Z]        }
+[2026-10-30T09:58:31.165Z] DEBUG: Found repo ignorePaths (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.165Z]        "ignorePaths": [
+[2026-10-30T09:58:31.165Z]          "**/node_modules/**",
+[2026-10-30T09:58:31.165Z]          "**/bower_components/**",
+[2026-10-30T09:58:31.165Z]          "**/vendor/**",
+[2026-10-30T09:58:31.165Z]          "**/examples/**",
+[2026-10-30T09:58:31.165Z]          "**/__tests__/**",
+[2026-10-30T09:58:31.165Z]          "**/test/**",
+[2026-10-30T09:58:31.165Z]          "**/tests/**",
+[2026-10-30T09:58:31.165Z]          "**/__fixtures__/**"
+[2026-10-30T09:58:31.165Z]        ]
+[2026-10-30T09:58:31.382Z] DEBUG: GET https://api.github.com/repos/idelsink/bootstrap/dependabot/alerts?state=open&direction=asc&per_page=100 = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=403 retryCount=0, duration=171) (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.384Z] DEBUG: GitHub failure: Resource not accessible by integration (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.384Z]        "err": {
+[2026-10-30T09:58:31.384Z]          "name": "HTTPError",
+[2026-10-30T09:58:31.384Z]          "code": "ERR_NON_2XX_3XX_RESPONSE",
+[2026-10-30T09:58:31.384Z]          "timings": {
+[2026-10-30T09:58:31.384Z]            "start": 1793354311207,
+[2026-10-30T09:58:31.384Z]            "socket": 1793354311207,
+[2026-10-30T09:58:31.384Z]            "lookup": 1793354311207,
+[2026-10-30T09:58:31.384Z]            "connect": 1793354311207,
+[2026-10-30T09:58:31.384Z]            "secureConnect": 1793354311207,
+[2026-10-30T09:58:31.384Z]            "upload": 1793354311207,
+[2026-10-30T09:58:31.384Z]            "response": 1793354311377,
+[2026-10-30T09:58:31.384Z]            "end": 1793354311378,
+[2026-10-30T09:58:31.384Z]            "phases": {
+[2026-10-30T09:58:31.384Z]              "wait": 0,
+[2026-10-30T09:58:31.384Z]              "dns": 26,
+[2026-10-30T09:58:31.384Z]              "tcp": 51,
+[2026-10-30T09:58:31.384Z]              "tls": 54,
+[2026-10-30T09:58:31.384Z]              "request": 0,
+[2026-10-30T09:58:31.384Z]              "firstByte": 170,
+[2026-10-30T09:58:31.384Z]              "download": 1,
+[2026-10-30T09:58:31.384Z]              "total": 171
+[2026-10-30T09:58:31.384Z]            }
+[2026-10-30T09:58:31.384Z]          },
+[2026-10-30T09:58:31.384Z]          "options": {
+[2026-10-30T09:58:31.384Z]            "headers": {
+[2026-10-30T09:58:31.384Z]              "user-agent": "Renovate/44.198.0 (https://github.com/renovatebot/renovate)",
+[2026-10-30T09:58:31.384Z]              "accept": "application/vnd.github+json, application/vnd.github.v3+json",
+[2026-10-30T09:58:31.384Z]              "authorization": "***********",
+[2026-10-30T09:58:31.384Z]              "accept-encoding": "gzip, deflate, br, zstd"
+[2026-10-30T09:58:31.384Z]            },
+[2026-10-30T09:58:31.384Z]            "url": "https://api.github.com/repos/idelsink/bootstrap/dependabot/alerts?state=open&direction=asc&per_page=100",
+[2026-10-30T09:58:31.384Z]            "hostType": "github",
+[2026-10-30T09:58:31.384Z]            "username": "",
+[2026-10-30T09:58:31.384Z]            "password": "",
+[2026-10-30T09:58:31.384Z]            "method": "GET",
+[2026-10-30T09:58:31.384Z]            "http2": false
+[2026-10-30T09:58:31.384Z]          },
+[2026-10-30T09:58:31.384Z]          "message": "Request failed with status code 403 (Forbidden): GET https://api.github.com/repos/idelsink/bootstrap/dependabot/alerts?state=open&direction=asc&per_page=100",
+[2026-10-30T09:58:31.384Z]          "response": {
+[2026-10-30T09:58:31.384Z]            "statusCode": 403,
+[2026-10-30T09:58:31.384Z]            "statusMessage": "Forbidden",
+[2026-10-30T09:58:31.384Z]            "body": {
+[2026-10-30T09:58:31.384Z]              "message": "Resource not accessible by integration",
+[2026-10-30T09:58:31.384Z]              "documentation_url": "https://docs.github.com/rest/dependabot/alerts#list-dependabot-alerts-for-a-repository",
+[2026-10-30T09:58:31.384Z]              "status": "403"
+[2026-10-30T09:58:31.384Z]            },
+[2026-10-30T09:58:31.384Z]            "headers": {
+[2026-10-30T09:58:31.384Z]              "date": "Fri, 30 Oct 2026 09:58:31 GMT",
+[2026-10-30T09:58:31.384Z]              "content-type": "application/json; charset=utf-8",
+[2026-10-30T09:58:31.384Z]              "x-github-media-type": "github.v3; format=json",
+[2026-10-30T09:58:31.384Z]              "x-accepted-github-permissions": "vulnerability_alerts=read",
+[2026-10-30T09:58:31.384Z]              "x-github-api-version-selected": "2022-11-28",
+[2026-10-30T09:58:31.384Z]              "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning",
+[2026-10-30T09:58:31.384Z]              "access-control-allow-origin": "*",
+[2026-10-30T09:58:31.384Z]              "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+[2026-10-30T09:58:31.384Z]              "x-frame-options": "deny",
+[2026-10-30T09:58:31.384Z]              "x-content-type-options": "nosniff",
+[2026-10-30T09:58:31.384Z]              "x-xss-protection": "0",
+[2026-10-30T09:58:31.384Z]              "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+[2026-10-30T09:58:31.384Z]              "content-security-policy": "default-src 'none'",
+[2026-10-30T09:58:31.384Z]              "vary": "Accept-Encoding, Accept, X-Requested-With",
+[2026-10-30T09:58:31.385Z]              "transfer-encoding": "chunked",
+[2026-10-30T09:58:31.385Z]              "x-github-request-id": "7008:756D5:B5E049:25DAA23:6AE46A46",
+[2026-10-30T09:58:31.385Z]              "x-github-edge-region": "iad",
+[2026-10-30T09:58:31.385Z]              "server": "github.com",
+[2026-10-30T09:58:31.385Z]              "x-ratelimit-limit": "7100",
+[2026-10-30T09:58:31.385Z]              "x-ratelimit-remaining": "6837",
+[2026-10-30T09:58:31.385Z]              "x-ratelimit-reset": "1793357123",
+[2026-10-30T09:58:31.385Z]              "x-ratelimit-used": "263",
+[2026-10-30T09:58:31.385Z]              "x-ratelimit-resource": "core"
+[2026-10-30T09:58:31.385Z]            },
+[2026-10-30T09:58:31.385Z]            "httpVersion": "1.1",
+[2026-10-30T09:58:31.385Z]            "retryCount": 0
+[2026-10-30T09:58:31.385Z]          }
+[2026-10-30T09:58:31.385Z]        }
+[2026-10-30T09:58:31.385Z]        HTTPError: Request failed with status code 403 (Forbidden): GET https://**redacted**@16.1.0/node_modules/got/dist/source/as-promise/index.js:131:46
+[2026-10-30T09:58:31.385Z]            at Request.<anonymous> (file:///usr/local/renovate/node_modules/.pnpm/got@16.1.0/node_modules/got/dist/source/as-promise/index.js:135:19)
+[2026-10-30T09:58:31.385Z]            at Request.wrapper (node:events:639:12)
+[2026-10-30T09:58:31.385Z]            at Request.emit (node:events:514:28)
+[2026-10-30T09:58:31.385Z]            at Request.emit (node:domain:489:12)
+[2026-10-30T09:58:31.385Z]            at Request._onResponseBase (file:///usr/local/renovate/node_modules/.pnpm/got@16.1.0/node_modules/got/dist/source/core/index.js:1272:22)
+[2026-10-30T09:58:31.385Z]            at processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-10-30T09:58:31.385Z]            at Request._onResponse (file:///usr/local/renovate/node_modules/.pnpm/got@16.1.0/node_modules/got/dist/source/core/index.js:1348:13)
+[2026-10-30T09:58:31.399Z] DEBUG: Error retrieving vulnerability alerts (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.399Z]        "err": {"message": "integration-unauthorized"}
+[2026-10-30T09:58:31.399Z]        Error: integration-unauthorized
+[2026-10-30T09:58:31.399Z]            at handleGotError (file:///usr/local/renovate/lib/util/http/github.ts:188:12)
+[2026-10-30T09:58:31.399Z]            at GithubHttp.handleError (file:///usr/local/renovate/lib/util/http/github.ts:433:11)
+[2026-10-30T09:58:31.399Z]            at GithubHttp.request (file:///usr/local/renovate/lib/util/http/http.ts:369:12)
+[2026-10-30T09:58:31.399Z]            at processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-10-30T09:58:31.399Z]            at GithubHttp.requestJsonUnsafe (file:///usr/local/renovate/lib/util/http/github.ts:447:20)
+[2026-10-30T09:58:31.399Z]            at GithubHttp.requestJson (file:///usr/local/renovate/lib/util/http/http.ts:488:17)
+[2026-10-30T09:58:31.399Z]            at Proxy.getVulnerabilityAlerts (file:///usr/local/renovate/lib/modules/platform/github/index.ts:2386:7)
+[2026-10-30T09:58:31.399Z]            at detectVulnerabilityAlerts (file:///usr/local/renovate/lib/workers/repository/init/vulnerability.ts:60:18)
+[2026-10-30T09:58:31.399Z]            at initRepo (file:///usr/local/renovate/lib/workers/repository/init/index.ts:72:12)
+[2026-10-30T09:58:31.399Z]            at instrument.attributes (file:///usr/local/renovate/lib/workers/repository/index.ts:87:18)
+[2026-10-30T09:58:31.399Z]            at renovateRepository (file:///usr/local/renovate/lib/workers/repository/index.ts:62:39)
+[2026-10-30T09:58:31.399Z]            at instrument.attributes (file:///usr/local/renovate/lib/workers/global/index.ts:241:13)
+[2026-10-30T09:58:31.399Z]            at start (file:///usr/local/renovate/lib/workers/global/index.ts:222:7)
+[2026-10-30T09:58:31.399Z]            at file:///usr/local/renovate/lib/renovate.ts:29:22
+[2026-10-30T09:58:31.399Z]  WARN: Cannot access vulnerability alerts. Please ensure permissions have been granted. (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.399Z]        "url": "https://docs.renovatebot.com/configuration-options/#vulnerabilityalerts"
+[2026-10-30T09:58:31.400Z] DEBUG: No vulnerability alerts found (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.400Z] DEBUG: No vulnerability alerts found (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.402Z] DEBUG: findIssue(Dependency Dashboard) (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.403Z] DEBUG: Issues cache: Done reconciling by iterating over all items (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.403Z] DEBUG: Issues cache: synced (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.403Z] DEBUG: Found issue 2 (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.678Z] DEBUG: http cache: saving https://api.github.com/repos/idelsink/bootstrap/issues/2 (etag=W/"72f6fdd6f14101f7adf11bd99d6551e0c9ebfee8f18a353cc6065a2f69a3fefa", lastModified=Fri, 30 Oct 2026 09:57:53 GMT) (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.678Z] DEBUG: Issues cache: Updating issue 2 in cache (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.679Z] DEBUG: No baseBranches (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.680Z] DEBUG: extract() (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.787Z] DEBUG: Cached extract result cannot be used due to config change (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.788Z] DEBUG: Setting current branch to main (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.788Z] DEBUG: syncGit(): Initializing git repository into /tmp/renovate/repos/github/idelsink/bootstrap (repository=idelsink/bootstrap)
+[2026-10-30T09:58:31.789Z] DEBUG: Performing blobless clone (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.522Z] DEBUG: git clone completed (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.522Z]        "durationMs": 733
+[2026-10-30T09:58:32.535Z] DEBUG: latest repository commit (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.535Z]        "latestCommit": {
+[2026-10-30T09:58:32.535Z]          "hash": "f4253d7430a4aade09ea53bde20671892193b0f6",
+[2026-10-30T09:58:32.535Z]          "date": "2026-04-07T21:57:58+02:00",
+[2026-10-30T09:58:32.535Z]          "message": "feat: Add renovate.json (#1)",
+[2026-10-30T09:58:32.535Z]          "refs": "HEAD -> main, origin/main, origin/HEAD",
+[2026-10-30T09:58:32.535Z]          "body": "Co-authored-by: renovate-iws[bot] <260228940+renovate-iws[bot]@users.noreply.github.com>",
+[2026-10-30T09:58:32.535Z]          "author_name": "renovate-iws[bot]",
+[2026-10-30T09:58:32.535Z]          "author_email": "260228940+renovate-iws[bot]@users.noreply.github.com"
+[2026-10-30T09:58:32.535Z]        }
+[2026-10-30T09:58:32.540Z] DEBUG: Current branch SHA: f4253d7430a4aade09ea53bde20671892193b0f6 (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.557Z] DEBUG: latest commit (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.557Z]        "branchName": "main",
+[2026-10-30T09:58:32.557Z]        "latestCommitDate": "2026-04-07T19:57:58.000Z",
+[2026-10-30T09:58:32.557Z]        "sha": "f4253d7430a4aade09ea53bde20671892193b0f6"
+[2026-10-30T09:58:32.575Z] DEBUG: Using file pattern: **/build.xml for manager ant (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.578Z] DEBUG: Using file pattern: /(^|/)tasks/[^/]+\.ya?ml$/ for manager ansible (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.580Z] DEBUG: Using file pattern: /(^|/)(galaxy|requirements)(\.ansible)?\.ya?ml$/ for manager ansible-galaxy (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.583Z] DEBUG: Using file pattern: /(^|/)apm\.ya?ml$/ for manager apm (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.585Z] DEBUG: Using file pattern: /(^|/)\.tool-versions$/ for manager asdf (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.587Z] DEBUG: Using file pattern: /(^|/).azuredevops/.+\.ya?ml$/ for manager azure-pipelines (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.587Z] DEBUG: Using file pattern: /azure.*pipelines?.*\.ya?ml$/ for manager azure-pipelines (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.589Z] DEBUG: Using file pattern: /(^|/)batect(-bundle)?\.ya?ml$/ for manager batect (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.590Z] DEBUG: Using file pattern: /(^|/)batect$/ for manager batect-wrapper (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.592Z] DEBUG: Using file pattern: /(^|/)WORKSPACE(|\.bazel|\.bzlmod)$/ for manager bazel (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.592Z] DEBUG: Using file pattern: /\.WORKSPACE\.bazel$/ for manager bazel (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.593Z] DEBUG: Using file pattern: /\.bzl$/ for manager bazel (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.594Z] DEBUG: Using file pattern: /(^|/|\.)MODULE\.bazel$/ for manager bazel-module (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.596Z] DEBUG: Using file pattern: /(^|/)\.bazelversion$/ for manager bazelisk (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.597Z] DEBUG: Using file pattern: /\.bicep$/ for manager bicep (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.598Z] DEBUG: Using file pattern: **/*-pipelines.yml for manager bitbucket-pipelines (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.600Z] DEBUG: Using file pattern: /(^|/)bitrise\.ya?ml$/ for manager bitrise (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.602Z] DEBUG: Using file pattern: /buildkite\.ya?ml/ for manager buildkite (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.602Z] DEBUG: Using file pattern: /\.buildkite/.+\.ya?ml$/ for manager buildkite (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.604Z] DEBUG: Using file pattern: /(^|/)project\.toml$/ for manager buildpacks (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.606Z] DEBUG: Using file pattern: /(^|/)bun\.lockb?$/ for manager bun (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.606Z] DEBUG: Using file pattern: /(^|/)package\.json$/ for manager bun (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.607Z] DEBUG: Using file pattern: /(^|/)\.bun-version$/ for manager bun-version (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.609Z] DEBUG: Using file pattern: /(^|/)Gemfile$/ for manager bundler (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.610Z] DEBUG: Using file pattern: /\.cake$/ for manager cake (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.612Z] DEBUG: Using file pattern: /(^|/)Cargo\.toml$/ for manager cargo (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.614Z] DEBUG: Using file pattern: /(^|/)\.circleci/.+\.ya?ml$/ for manager circleci (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.616Z] DEBUG: Using file pattern: /(^|/)cloudbuild\.ya?ml/ for manager cloudbuild (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.617Z] DEBUG: Using file pattern: /(^|/)Podfile$/ for manager cocoapods (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.619Z] DEBUG: Using file pattern: /(^|/)([\w-]*)composer\.json$/ for manager composer (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.620Z] DEBUG: Using file pattern: /(^|/)conanfile\.(txt|py)$/ for manager conan (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.621Z] DEBUG: Using file pattern: /(^|/)\.copier-answers(\..+)?\.ya?ml/ for manager copier (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.631Z] DEBUG: Using file pattern: /(^|/)cpanfile$/ for manager cpanfile (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.634Z] DEBUG: Using file pattern: /^\.crow(?:/[^/]+)?\.ya?ml$/ for manager crow (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.636Z] DEBUG: Using file pattern: /(^|/)deno\.lock$/ for manager deno (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.636Z] DEBUG: Using file pattern: /(^|/)deno\.(json|jsonc)$/ for manager deno (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.638Z] DEBUG: Using file pattern: /(^|/)(?:deps|bb)\.edn$/ for manager deps-edn (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.639Z] DEBUG: Using file pattern: /(^|/)devbox\.json$/ for manager devbox (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.641Z] DEBUG: Using file pattern: /^.devcontainer/devcontainer.json$/ for manager devcontainer (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.641Z] DEBUG: Using file pattern: /^.devcontainer.json$/ for manager devcontainer (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.641Z] DEBUG: Using file pattern: /^.devcontainer/[^/]+/devcontainer.json$/ for manager devcontainer (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.643Z] DEBUG: Using file pattern: /(^|/)(?:docker-)?compose[^/]*\.ya?ml$/ for manager docker-compose (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.644Z] DEBUG: Using file pattern: /(^|/|\.)([Dd]ocker|[Cc]ontainer)file$/ for manager dockerfile (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.645Z] DEBUG: Using file pattern: /(^|/)([Dd]ocker|[Cc]ontainer)file[^/]*$/ for manager dockerfile (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.646Z] DEBUG: Using file pattern: /(^|/)\.drone\.yml$/ for manager droneci (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.647Z] DEBUG: Using file pattern: /(^|/)fleet\.ya?ml/ for manager fleet (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.649Z] DEBUG: Using file pattern: /(?:^|/)gotk-components\.ya?ml$/ for manager flux (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.650Z] DEBUG: Using file pattern: /(^|/)\.fvm/fvm_config\.json$/ for manager fvm (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.651Z] DEBUG: Using file pattern: /(^|/)\.fvmrc$/ for manager fvm (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.652Z] DEBUG: Using file pattern: /(^|/)\.gitmodules$/ for manager git-submodules (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.653Z] DEBUG: Using file pattern: /(^|/)(workflow-templates|\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\.ya?ml$/ for manager github-actions (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.654Z] DEBUG: Using file pattern: /(^|/)action\.ya?ml$/ for manager github-actions (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.655Z] DEBUG: Using file pattern: /\.gitlab-ci\.ya?ml$/ for manager gitlabci (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.657Z] DEBUG: Using file pattern: /\.gitlab-ci\.ya?ml$/ for manager gitlabci-include (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.659Z] DEBUG: Using file pattern: /(^|/)gleam.toml$/ for manager gleam (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.660Z] DEBUG: Using file pattern: /(^|/)go\.mod$/ for manager gomod (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.662Z] DEBUG: Using file pattern: /\.gradle(\.kts)?$/ for manager gradle (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.662Z] DEBUG: Using file pattern: /(^|/)gradle\.properties$/ for manager gradle (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.662Z] DEBUG: Using file pattern: /(^|/)gradle/.+\.toml$/ for manager gradle (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.663Z] DEBUG: Using file pattern: /(^|/)buildSrc/.+\.kt$/ for manager gradle (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.663Z] DEBUG: Using file pattern: /\.versions\.toml$/ for manager gradle (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.664Z] DEBUG: Using file pattern: /(^|/)versions.props$/ for manager gradle (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.664Z] DEBUG: Using file pattern: /(^|/)versions.lock$/ for manager gradle (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.668Z] DEBUG: Using file pattern: /(^|/)gradle/wrapper/gradle-wrapper\.properties$/ for manager gradle-wrapper (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.668Z] DEBUG: Using file pattern: /\.cabal$/ for manager haskell-cabal (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.669Z] DEBUG: Using file pattern: /(^|/)requirements\.ya?ml$/ for manager helm-requirements (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.670Z] DEBUG: Using file pattern: /(^|/)values\.ya?ml$/ for manager helm-values (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.672Z] DEBUG: Using file pattern: /(^|/)helmfile\.ya?ml(?:\.gotmpl)?$/ for manager helmfile (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.672Z] DEBUG: Using file pattern: /(^|/)helmfile\.d/.+\.ya?ml(?:\.gotmpl)?$/ for manager helmfile (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.675Z] DEBUG: Using file pattern: /(^|/)Chart\.ya?ml$/ for manager helmv3 (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.676Z] DEBUG: Using file pattern: /(^|/)bin/hermit$/ for manager hermit (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.677Z] DEBUG: Using file pattern: /(^|/)manifest\.json$/ for manager homeassistant-manifest (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.679Z] DEBUG: Using file pattern: /^Formula/\w*/?[^/]+[.]rb$/ for manager homebrew (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.680Z] DEBUG: Using file pattern: /\.html?$/ for manager html (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.682Z] DEBUG: Using file pattern: /(^|/)plugins\.(txt|ya?ml)$/ for manager jenkins (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.684Z] DEBUG: Using file pattern: /(^|/)jsonnetfile\.json$/ for manager jsonnet-bundler (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.685Z] DEBUG: Using file pattern: /^.+\.main\.kts$/ for manager kotlin-script (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.688Z] DEBUG: Using file pattern: /(^|/)kustomization\.ya?ml$/ for manager kustomize (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.689Z] DEBUG: Using file pattern: /(^|/)project\.clj$/ for manager leiningen (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.690Z] DEBUG: Using file pattern: /(^|/|\.)pom\.xml$/ for manager maven (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.691Z] DEBUG: Using file pattern: /(^|/)pom\.template\.xml$/ for manager maven (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.691Z] DEBUG: Using file pattern: /^(((\.mvn)|(\.m2))/)?settings\.xml$/ for manager maven (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.691Z] DEBUG: Using file pattern: /(^|/)\.mvn/extensions\.xml$/ for manager maven (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.693Z] DEBUG: Using file pattern: /(^|\/).mvn/wrapper/maven-wrapper.properties$/ for manager maven-wrapper (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.693Z] DEBUG: Using file pattern: /(^|\/)mvnw(.cmd)?$/ for manager maven-wrapper (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.695Z] DEBUG: Using file pattern: /(^|/)package\.js$/ for manager meteor (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.696Z] DEBUG: Using file pattern: /(^|/)Mintfile$/ for manager mint (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.698Z] DEBUG: Using file pattern: **/{,.}mise{,.*}.toml for manager mise (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.699Z] DEBUG: Using file pattern: **/{,.}mise/config{,.*}.toml for manager mise (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.699Z] DEBUG: Using file pattern: **/.config/mise{,.*}.toml for manager mise (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.700Z] DEBUG: Using file pattern: **/.config/mise/{mise,config}{,.*}.toml for manager mise (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.700Z] DEBUG: Using file pattern: **/.config/mise/conf.d/*.toml for manager mise (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.700Z] DEBUG: Using file pattern: **/.rtx{,.*}.toml for manager mise (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.702Z] DEBUG: Using file pattern: /(^|/)mix\.exs$/ for manager mix (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.703Z] DEBUG: Using file pattern: /(^|/)flake\.nix$/ for manager nix (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.705Z] DEBUG: Using file pattern: /(^|/)\.node-version$/ for manager nodenv (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.707Z] DEBUG: Using file pattern: /(^|/)package\.json$/ for manager npm (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.707Z] DEBUG: Using file pattern: /(^|/)pnpm-workspace\.yaml$/ for manager npm (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.707Z] DEBUG: Using file pattern: /(^|/)\.yarnrc\.yml$/ for manager npm (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.709Z] DEBUG: Using file pattern: /\.(?:cs|fs|vb|sql)proj$/ for manager nuget (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.709Z] DEBUG: Using file pattern: /\.(?:props|targets)$/ for manager nuget (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.710Z] DEBUG: Using file pattern: /(^|/)dotnet-tools\.json$/ for manager nuget (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.710Z] DEBUG: Using file pattern: /(^|/)global\.json$/ for manager nuget (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.715Z] DEBUG: Using file pattern: /(^|/)\.nvmrc$/ for manager nvm (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.719Z] DEBUG: Using file pattern: /(^|/)src/main/features/.+\.json$/ for manager osgi (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.720Z] DEBUG: Using file pattern: /(^|/)paket\.dependencies$/ for manager paket (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.722Z] DEBUG: Using file pattern: /(^|/)pyproject\.toml$/ for manager pep621 (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.725Z] DEBUG: Using file pattern: /(^|/)[\w-]*requirements([-._]\w+)?\.(txt|pip)$/ for manager pip_requirements (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.726Z] DEBUG: Using file pattern: /(^|/)setup\.py$/ for manager pip_setup (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.728Z] DEBUG: Using file pattern: /(^|/)Pipfile$/ for manager pipenv (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.729Z] DEBUG: Using file pattern: /(^|/)pyproject\.toml$/ for manager pixi (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.729Z] DEBUG: Using file pattern: /(^|/)pixi\.toml$/ for manager pixi (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.731Z] DEBUG: Using file pattern: /(^|/)pyproject\.toml$/ for manager poetry (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.732Z] DEBUG: Using file pattern: /(^|/)\.pre-commit-config\.ya?ml$/ for manager pre-commit (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.734Z] DEBUG: Using file pattern: **/.prototools for manager proto (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.735Z] DEBUG: Using file pattern: /(^|/)pubspec\.ya?ml$/ for manager pub (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.737Z] DEBUG: Using file pattern: /(^|/)Puppetfile$/ for manager puppet (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.738Z] DEBUG: Using file pattern: /(^|/)\.python-version$/ for manager pyenv (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.739Z] DEBUG: Using file pattern: /.+\.container$/ for manager quadlet (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.740Z] DEBUG: Using file pattern: /.+\.image$/ for manager quadlet (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.740Z] DEBUG: Using file pattern: /.+\.volume$/ for manager quadlet (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.741Z] DEBUG: Using file pattern: renovate.json for manager renovate-config (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.742Z] DEBUG: Using file pattern: renovate.jsonc for manager renovate-config (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.742Z] DEBUG: Using file pattern: renovate.json5 for manager renovate-config (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.742Z] DEBUG: Using file pattern: .github/renovate.json for manager renovate-config (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.743Z] DEBUG: Using file pattern: .github/renovate.jsonc for manager renovate-config (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.743Z] DEBUG: Using file pattern: .github/renovate.json5 for manager renovate-config (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.743Z] DEBUG: Using file pattern: .gitlab/renovate.json for manager renovate-config (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.744Z] DEBUG: Using file pattern: .gitlab/renovate.jsonc for manager renovate-config (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.744Z] DEBUG: Using file pattern: .gitlab/renovate.json5 for manager renovate-config (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.744Z] DEBUG: Using file pattern: .renovaterc for manager renovate-config (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.745Z] DEBUG: Using file pattern: .renovaterc.json for manager renovate-config (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.745Z] DEBUG: Using file pattern: .renovaterc.jsonc for manager renovate-config (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.745Z] DEBUG: Using file pattern: .renovaterc.json5 for manager renovate-config (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.747Z] DEBUG: Using file pattern: /(^|/)\.ruby-version$/ for manager ruby-version (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.748Z] DEBUG: Using file pattern: /(^|/)runtime.txt$/ for manager runtime-version (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.750Z] DEBUG: Using file pattern: /(^|/)rust-toolchain(\.toml)?$/ for manager rust-toolchain (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.751Z] DEBUG: Using file pattern: /\.sbt$/ for manager sbt (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.752Z] DEBUG: Using file pattern: /project/[^/]*\.scala$/ for manager sbt (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.752Z] DEBUG: Using file pattern: /project/build\.properties$/ for manager sbt (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.752Z] DEBUG: Using file pattern: /(^|/)repositories$/ for manager sbt (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.754Z] DEBUG: Using file pattern: /(^|/)\.scalafmt.conf$/ for manager scalafmt (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.755Z] DEBUG: Using file pattern: /(^|/)setup\.cfg$/ for manager setup-cfg (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.757Z] DEBUG: Using file pattern: /(^|/)smithy-build\.json$/ for manager smithy (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.759Z] DEBUG: Using file pattern: /(^|/)Package\.swift/ for manager swift (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.761Z] DEBUG: Using file pattern: **/*.tf for manager terraform (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.761Z] DEBUG: Using file pattern: **/*.tofu for manager terraform (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.763Z] DEBUG: Using file pattern: /(^|/)\.terraform-version$/ for manager terraform-version (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.764Z] DEBUG: Using file pattern: /(^|/)terragrunt\.hcl$/ for manager terragrunt (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.766Z] DEBUG: Using file pattern: /(^|/)\.terragrunt-version$/ for manager terragrunt-version (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.767Z] DEBUG: Using file pattern: /\.tflint\.hcl$/ for manager tflint-plugin (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.768Z] DEBUG: Using file pattern: /^\.travis\.ya?ml$/ for manager travis (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.770Z] DEBUG: Using file pattern: /\.typ$/ for manager typst (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.771Z] DEBUG: Using file pattern: **/ProjectSettings/ProjectVersion.txt for manager unity3d (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.772Z] DEBUG: Using file pattern: /(^|/)\.vela\.ya?ml$/ for manager velaci (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.774Z] DEBUG: Using file pattern: /(^|/)vendir\.yml$/ for manager vendir (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.775Z] DEBUG: Using file pattern: /^\.woodpecker(?:/[^/]+)?\.ya?ml$/ for manager woodpecker (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.776Z] DEBUG: Using file pattern: **/project.yml for manager xcodegen (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.778Z] DEBUG: Using file pattern: **/{j,t}sconfig.json for manager regex (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.779Z] DEBUG: Using file pattern: **/{j,t}sconfig.*.json for manager regex (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.780Z] DEBUG: Using file pattern: **/{j,t}sconfig.json for manager regex (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.780Z] DEBUG: Using file pattern: **/{j,t}sconfig.*.json for manager regex (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.781Z] DEBUG: Using file pattern: /(^|/)\.php-version$/ for manager regex (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.782Z] DEBUG: Using file pattern: /./ for manager regex (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.783Z] DEBUG: Using file pattern: /./ for manager regex (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.784Z] DEBUG: Using file pattern: /./ for manager regex (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.786Z] DEBUG: Using file pattern: /(^|/)(workflow-templates|\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\.ya?ml$/ for manager jsonata (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.786Z] DEBUG: Using file pattern: /(^|/)action\.ya?ml$/ for manager jsonata (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.787Z] DEBUG: Matched 4 file(s) for manager ansible (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.787Z] DEBUG: pre-commit is disabled (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.788Z] DEBUG: Matched 1 file(s) for manager renovate-config (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.788Z] DEBUG: Matched 22 file(s) for manager regex (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.788Z] DEBUG: Matched 22 file(s) for manager regex (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.788Z] DEBUG: Matched 22 file(s) for manager regex (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.794Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=.pre-commit-config.yaml)
+[2026-10-30T09:58:32.794Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=.pre-commit-config.yaml)
+[2026-10-30T09:58:32.795Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=.pre-commit-config.yaml)
+[2026-10-30T09:58:32.796Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=LICENSE)
+[2026-10-30T09:58:32.796Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=LICENSE)
+[2026-10-30T09:58:32.797Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=LICENSE)
+[2026-10-30T09:58:32.798Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=README.md)
+[2026-10-30T09:58:32.798Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=README.md)
+[2026-10-30T09:58:32.799Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=README.md)
+[2026-10-30T09:58:32.800Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=ansible.cfg)
+[2026-10-30T09:58:32.800Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=ansible.cfg)
+[2026-10-30T09:58:32.801Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=ansible.cfg)
+[2026-10-30T09:58:32.801Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=bin/setup-workstation.sh)
+[2026-10-30T09:58:32.802Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=bin/setup-workstation.sh)
+[2026-10-30T09:58:32.802Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=bin/setup-workstation.sh)
+[2026-10-30T09:58:32.803Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=bin/setup-workstation.sh.sig)
+[2026-10-30T09:58:32.803Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=bin/setup-workstation.sh.sig)
+[2026-10-30T09:58:32.804Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=bin/setup-workstation.sh.sig)
+[2026-10-30T09:58:32.805Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=inventories/README.md)
+[2026-10-30T09:58:32.805Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=inventories/README.md)
+[2026-10-30T09:58:32.805Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=inventories/README.md)
+[2026-10-30T09:58:32.806Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=inventories/common-workstation/host_vars/workstation.yaml)
+[2026-10-30T09:58:32.807Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=inventories/common-workstation/host_vars/workstation.yaml)
+[2026-10-30T09:58:32.807Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=inventories/common-workstation/host_vars/workstation.yaml)
+[2026-10-30T09:58:32.809Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=inventories/common-workstation/hosts/inventory.yml)
+[2026-10-30T09:58:32.809Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=inventories/common-workstation/hosts/inventory.yml)
+[2026-10-30T09:58:32.810Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=inventories/common-workstation/hosts/inventory.yml)
+[2026-10-30T09:58:32.810Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=playbooks/workstation.yaml)
+[2026-10-30T09:58:32.811Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=playbooks/workstation.yaml)
+[2026-10-30T09:58:32.812Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=playbooks/workstation.yaml)
+[2026-10-30T09:58:32.812Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=pre-commit-hooks/check-script-signatures.sh)
+[2026-10-30T09:58:32.812Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=pre-commit-hooks/check-script-signatures.sh)
+[2026-10-30T09:58:32.813Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=pre-commit-hooks/check-script-signatures.sh)
+[2026-10-30T09:58:32.813Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=renovate.json)
+[2026-10-30T09:58:32.814Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=renovate.json)
+[2026-10-30T09:58:32.814Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=renovate.json)
+[2026-10-30T09:58:32.815Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.flatpak/README.md)
+[2026-10-30T09:58:32.815Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.flatpak/README.md)
+[2026-10-30T09:58:32.816Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.flatpak/defaults/main.yml)
+[2026-10-30T09:58:32.816Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.flatpak/README.md)
+[2026-10-30T09:58:32.816Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.flatpak/defaults/main.yml)
+[2026-10-30T09:58:32.817Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.flatpak/tasks/main.yml)
+[2026-10-30T09:58:32.817Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.flatpak/tasks/main.yml)
+[2026-10-30T09:58:32.818Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.flatpak/defaults/main.yml)
+[2026-10-30T09:58:32.819Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.gnome-extensions/README.md)
+[2026-10-30T09:58:32.819Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.flatpak/tasks/main.yml)
+[2026-10-30T09:58:32.820Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.gnome-extensions/README.md)
+[2026-10-30T09:58:32.820Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.gnome-extensions/defaults/main.yml)
+[2026-10-30T09:58:32.821Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.gnome-extensions/README.md)
+[2026-10-30T09:58:32.821Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.gnome-extensions/defaults/main.yml)
+[2026-10-30T09:58:32.822Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.gnome-extensions/defaults/main.yml)
+[2026-10-30T09:58:32.822Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.gnome-extensions/tasks/main.yml)
+[2026-10-30T09:58:32.822Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.gnome-extensions/tasks/main.yml)
+[2026-10-30T09:58:32.823Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.gnome-extensions/tasks/main.yml)
+[2026-10-30T09:58:32.823Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.system-packages/README.md)
+[2026-10-30T09:58:32.824Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.system-packages/README.md)
+[2026-10-30T09:58:32.825Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.system-packages/README.md)
+[2026-10-30T09:58:32.825Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.system-packages/defaults/main.yaml)
+[2026-10-30T09:58:32.826Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.system-packages/defaults/main.yaml)
+[2026-10-30T09:58:32.826Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.system-packages/defaults/main.yaml)
+[2026-10-30T09:58:32.827Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.system-packages/tasks/dnf.yaml)
+[2026-10-30T09:58:32.827Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.system-packages/tasks/dnf.yaml)
+[2026-10-30T09:58:32.828Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.system-packages/tasks/main.yaml)
+[2026-10-30T09:58:32.828Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.system-packages/tasks/main.yaml)
+[2026-10-30T09:58:32.829Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.system-packages/tasks/dnf.yaml)
+[2026-10-30T09:58:32.829Z] DEBUG: No dependencies found in file for custom regex manager (repository=idelsink/bootstrap, packageFile=roles/idelsink.system-packages/tasks/main.yaml)
+[2026-10-30T09:58:32.830Z] DEBUG: manager extract durations (ms) (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.830Z]        "managers": {"ansible": 12, "pre-commit": 1, "regex": 41, "renovate-config": 6}
+[2026-10-30T09:58:32.830Z] DEBUG: Found renovate-config package files (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.830Z] DEBUG: Found 1 package file(s) (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.831Z]  INFO: Dependency extraction complete (repository=idelsink/bootstrap, baseBranch=main)
+[2026-10-30T09:58:32.831Z]        "stats": {
+[2026-10-30T09:58:32.831Z]          "managers": {"renovate-config": {"fileCount": 1, "depCount": 1}},
+[2026-10-30T09:58:32.831Z]          "total": {"fileCount": 1, "depCount": 1}
+[2026-10-30T09:58:32.831Z]        }
+[2026-10-30T09:58:32.834Z] DEBUG: PackageFiles.add() - Package file saved for base branch (repository=idelsink/bootstrap, baseBranch=main)
+[2026-10-30T09:58:32.834Z] DEBUG: Package releases lookups complete (repository=idelsink/bootstrap, baseBranch=main)
+[2026-10-30T09:58:32.835Z] DEBUG: Repository libYears (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.835Z]        "libYears": {"managers": {"renovate-config": 0}, "total": 0},
+[2026-10-30T09:58:32.835Z]        "dependencyStatus": {"outdated": 0, "total": 1}
+[2026-10-30T09:58:32.835Z] DEBUG: branchifyUpgrades (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.837Z] DEBUG: detectSemanticCommits() (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.837Z] DEBUG: getCommitMessages (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.844Z] DEBUG: semanticCommits: score=-18 (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.845Z] DEBUG: semanticCommits: disabled (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.845Z] DEBUG: 0 flattened updates found:  (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.845Z] DEBUG: Returning 0 branch(es) (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.845Z] DEBUG: config.repoIsOnboarded=true (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.845Z] DEBUG: packageFiles with updates (repository=idelsink/bootstrap, baseBranch=main)
+[2026-10-30T09:58:32.845Z]        "config": {
+[2026-10-30T09:58:32.845Z]          "renovate-config": [
+[2026-10-30T09:58:32.845Z]            {
+[2026-10-30T09:58:32.845Z]              "deps": [
+[2026-10-30T09:58:32.845Z]                {
+[2026-10-30T09:58:32.845Z]                  "depName": "idelsink/renovate-runner",
+[2026-10-30T09:58:32.845Z]                  "skipReason": "unspecified-version",
+[2026-10-30T09:58:32.845Z]                  "packageName": "idelsink/renovate-runner",
+[2026-10-30T09:58:32.845Z]                  "updates": []
+[2026-10-30T09:58:32.845Z]                }
+[2026-10-30T09:58:32.845Z]              ],
+[2026-10-30T09:58:32.845Z]              "packageFile": "renovate.json"
+[2026-10-30T09:58:32.845Z]            }
+[2026-10-30T09:58:32.845Z]          ]
+[2026-10-30T09:58:32.845Z]        }
+[2026-10-30T09:58:32.845Z] DEBUG: detectSemanticCommits() (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.845Z] DEBUG: semanticCommits: returning "disabled" from cache (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.846Z] DEBUG: processRepo() (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.846Z] DEBUG: Processing 0 branches:  (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.846Z] DEBUG: 0 PRs are currently open (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.847Z] DEBUG: ConcurrentPRs count = 0 (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.847Z] DEBUG: 0 PRs are currently open (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.847Z] DEBUG: VulnerabilityConcurrentPRs count = 0 (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.847Z] DEBUG: 0 already existing branches found. (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.847Z] DEBUG: Branches count = 0 (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.847Z] DEBUG: 0 already existing branches found. (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.848Z] DEBUG: VulnerabilityBranches count = 0 (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.848Z] DEBUG: Calculating PRs created so far in this hour currentHourStart=2026-10-30T09:00:00.000Z (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.849Z] DEBUG: 0 PRs have been created so far in this hour. (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.849Z] DEBUG: HourlyPRs count = 0 (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.849Z] DEBUG: Calculating commits so far in this hour currentHourStart=2026-10-30T09:00:00.000Z, for 0 branches (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.849Z] DEBUG: 0 commits so far in this hour. (repository=idelsink/bootstrap)
+[2026-10-30T09:58:32.850Z] DEBUG: HourlyCommits count = 0 (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.032Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/bootstrap/contents/renovate.json from 2026-10-30T09:58:29.978Z (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.033Z] DEBUG: Config does not need migration (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.034Z] DEBUG: ensureDependencyDashboard() (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.034Z] DEBUG: Ensuring Dependency Dashboard (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.034Z] DEBUG: Checking packageFiles for deprecated or replacement packages (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.289Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/bootstrap/issues/2 from 2026-10-30T09:58:31.677Z (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.289Z] DEBUG: Issues cache: Updating issue 2 in cache (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.532Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/bootstrap/issues/2 from 2026-10-30T09:58:33.288Z (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.532Z] DEBUG: Issues cache: Updating issue 2 in cache (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.551Z] DEBUG: ensureIssue(Dependency Dashboard) (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.832Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/bootstrap/issues/2 from 2026-10-30T09:58:33.531Z (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.832Z] DEBUG: Issues cache: Updating issue 2 in cache (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.832Z] DEBUG: Issue is open and up to date - nothing to do (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.833Z] DEBUG: checkReconfigureBranch() (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.833Z] DEBUG: No reconfigure branch found (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.833Z]        "reconfigureBranch": "renovate/reconfigure"
+[2026-10-30T09:58:33.833Z] DEBUG: Removing any stale branches (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.833Z] DEBUG: config.repoIsOnboarded=true (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.834Z] DEBUG: No renovate branches found (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.848Z] DEBUG: PackageFiles.clear() - Package files deleted (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.849Z] DEBUG: Branch summary (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.849Z]        "cacheModified": true,
+[2026-10-30T09:58:33.849Z]        "baseBranches": [{"branchName": "main", "sha": "f4253d7430a4aade09ea53bde20671892193b0f6"}],
+[2026-10-30T09:58:33.849Z]        "branches": [],
+[2026-10-30T09:58:33.849Z]        "defaultBranch": "main",
+[2026-10-30T09:58:33.849Z]        "inactiveBranches": []
+[2026-10-30T09:58:33.849Z] DEBUG: Renovate repository PR statistics (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.849Z]        "stats": {"total": 0, "open": 0, "closed": 0, "merged": 0},
+[2026-10-30T09:58:33.849Z]        "lastPRMergedAt": undefined
+[2026-10-30T09:58:33.850Z] DEBUG: Repository result: done, status: onboarded, enabled: true, onboarded: true (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.850Z] DEBUG: repository problems (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.850Z]        "repoProblems": [
+[2026-10-30T09:58:33.850Z]          "⚠️ WARN: Cannot access vulnerability alerts. Please ensure permissions have been granted."
+[2026-10-30T09:58:33.850Z]        ]
+[2026-10-30T09:58:33.855Z] DEBUG: Repository timing splits (milliseconds) (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.855Z]        "splits": {"init": 2864, "onboarding": 0, "extract": 1431, "lookup": 14, "update": 5},
+[2026-10-30T09:58:33.855Z]        "total": 5318
+[2026-10-30T09:58:33.855Z] DEBUG: Package cache statistics (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.855Z]        "get": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0},
+[2026-10-30T09:58:33.855Z]        "set": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0}
+[2026-10-30T09:58:33.856Z] DEBUG: HTTP statistics (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.856Z]        "hosts": {
+[2026-10-30T09:58:33.856Z]          "api.github.com": {
+[2026-10-30T09:58:33.856Z]            "count": 11,
+[2026-10-30T09:58:33.856Z]            "reqAvgMs": 242,
+[2026-10-30T09:58:33.856Z]            "reqMedianMs": 239,
+[2026-10-30T09:58:33.856Z]            "reqMaxMs": 372,
+[2026-10-30T09:58:33.856Z]            "queueAvgMs": 0,
+[2026-10-30T09:58:33.856Z]            "queueMedianMs": 0,
+[2026-10-30T09:58:33.856Z]            "queueMaxMs": 2
+[2026-10-30T09:58:33.856Z]          }
+[2026-10-30T09:58:33.856Z]        },
+[2026-10-30T09:58:33.856Z]        "requests": 11
+[2026-10-30T09:58:33.856Z] DEBUG: HTTP cache statistics (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.856Z]        "https://api.github.com": {
+[2026-10-30T09:58:33.856Z]          "/repos/idelsink/bootstrap/contents/renovate.json": {"hit": 3, "miss": 0},
+[2026-10-30T09:58:33.856Z]          "/repos/idelsink/bootstrap/issues/2": {"hit": 3, "miss": 1},
+[2026-10-30T09:58:33.856Z]          "/repos/idelsink/bootstrap/pulls": {"hit": 0, "miss": 1},
+[2026-10-30T09:58:33.856Z]          "/repos/idelsink/renovate-runner/contents/default.json": {"hit": 0, "miss": 1}
+[2026-10-30T09:58:33.856Z]        }
+[2026-10-30T09:58:33.857Z] DEBUG: Lookup statistics (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.857Z] DEBUG: getReleases statistics summary (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.857Z]        "stats": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0},
+[2026-10-30T09:58:33.857Z]        "datasources": {}
+[2026-10-30T09:58:33.858Z] DEBUG: Cache fallback URLs (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.858Z]        "count": 0,
+[2026-10-30T09:58:33.858Z]        "hits": {}
+[2026-10-30T09:58:33.858Z] DEBUG: Git operations statistics (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.858Z]        "other": {
+[2026-10-30T09:58:33.858Z]          "count": 8,
+[2026-10-30T09:58:33.858Z]          "avgMs": 43,
+[2026-10-30T09:58:33.858Z]          "medianMs": 5.369344,
+[2026-10-30T09:58:33.858Z]          "maxMs": 309.440768,
+[2026-10-30T09:58:33.858Z]          "totalMs": 347
+[2026-10-30T09:58:33.858Z]        },
+[2026-10-30T09:58:33.858Z]        "clone": {
+[2026-10-30T09:58:33.858Z]          "count": 1,
+[2026-10-30T09:58:33.858Z]          "avgMs": 732,
+[2026-10-30T09:58:33.858Z]          "medianMs": 731.975168,
+[2026-10-30T09:58:33.858Z]          "maxMs": 731.975168,
+[2026-10-30T09:58:33.858Z]          "totalMs": 732
+[2026-10-30T09:58:33.858Z]        },
+[2026-10-30T09:58:33.858Z]        "checkout": {"count": 1, "avgMs": 7, "medianMs": 6.92736, "maxMs": 6.92736, "totalMs": 7},
+[2026-10-30T09:58:33.858Z]        "reset": {"count": 1, "avgMs": 7, "medianMs": 6.511616, "maxMs": 6.511616, "totalMs": 7}
+[2026-10-30T09:58:33.858Z]  INFO: Repository finished (repository=idelsink/bootstrap)
+[2026-10-30T09:58:33.858Z]        "cloned": true,
+[2026-10-30T09:58:33.858Z]        "durationMs": 5318,
+[2026-10-30T09:58:33.859Z]        "result": "done",
+[2026-10-30T09:58:33.859Z]        "status": "onboarded",
+[2026-10-30T09:58:33.859Z]        "enabled": true,
+[2026-10-30T09:58:33.859Z]        "onboarded": true,
+[2026-10-30T09:58:33.859Z]        "exitCode": 0
+[2026-10-30T09:58:33.859Z] DEBUG: Checking file package cache for expired items
+[2026-10-30T09:58:33.869Z] DEBUG: Cache GC: kept 0 content entries (0 bytes), removed 0 orphaned (0 bytes) in 7ms
+[2026-10-30T09:58:33.869Z] DEBUG: Deleted 0 of 0 file cached entries in 10ms
