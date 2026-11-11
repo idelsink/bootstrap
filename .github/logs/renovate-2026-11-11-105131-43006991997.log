@@ -1,0 +1,494 @@
+[2026-11-11T10:50:59.709Z] [command]/usr/bin/docker run --rm --volume /home/runner/work/renovate-runner/renovate-runner/config.js:/usr/src/app/config.js:ro --volume /home/runner/work/_temp/renovate-cache/renovate/repository:/tmp/renovate/cache/renovate/repository --env RENOVATE_RUNNER_REPO --env RENOVATE_TOKEN --env RENOVATE_REPOSITORIES --env LOG_LEVEL --env CI ghcr.io/renovatebot/renovate:44.227.4@sha256:fe058db9710840a4821f20190b3769e3ce709a049b8640aa2bf5f044969fe702
+[2026-11-11T10:50:59.811Z] Unable to find image 'ghcr.io/renovatebot/renovate:44.227.4@sha256:fe058db9710840a4821f20190b3769e3ce709a049b8640aa2bf5f044969fe702' locally
+[2026-11-11T10:51:00.202Z] ghcr.io/renovatebot/renovate@sha256:fe058db9710840a4821f20190b3769e3ce709a049b8640aa2bf5f044969fe702: Pulling from renovatebot/renovate
+[2026-11-11T10:51:00.375Z] 4f4fb700ef54: Pulling fs layer
+[2026-11-11T10:51:00.375Z] 597eff22010b: Pulling fs layer
+[2026-11-11T10:51:00.375Z] b61b4c11fc9a: Pulling fs layer
+[2026-11-11T10:51:00.376Z] c815bcde552b: Pulling fs layer
+[2026-11-11T10:51:00.376Z] 3473da8de2bc: Pulling fs layer
+[2026-11-11T10:51:00.376Z] fd59700bd496: Pulling fs layer
+[2026-11-11T10:51:00.376Z] 3eeedf74acb3: Pulling fs layer
+[2026-11-11T10:51:00.376Z] fa31996ab869: Pulling fs layer
+[2026-11-11T10:51:00.376Z] db1eb3dd5719: Pulling fs layer
+[2026-11-11T10:51:00.376Z] 8c3356d10d6b: Pulling fs layer
+[2026-11-11T10:51:00.376Z] 9ceaee0fe102: Pulling fs layer
+[2026-11-11T10:51:00.376Z] a2d562850546: Pulling fs layer
+[2026-11-11T10:51:00.416Z] 4f4fb700ef54: Already exists
+[2026-11-11T10:51:00.621Z] 8c3356d10d6b: Download complete
+[2026-11-11T10:51:00.622Z] b61b4c11fc9a: Download complete
+[2026-11-11T10:51:00.624Z] c815bcde552b: Download complete
+[2026-11-11T10:51:00.626Z] a2d562850546: Download complete
+[2026-11-11T10:51:00.627Z] fa31996ab869: Download complete
+[2026-11-11T10:51:00.720Z] 7b01025030be: Download complete
+[2026-11-11T10:51:01.516Z] 597eff22010b: Download complete
+[2026-11-11T10:51:01.917Z] 3eeedf74acb3: Download complete
+[2026-11-11T10:51:02.216Z] db1eb3dd5719: Download complete
+[2026-11-11T10:51:02.416Z] 3473da8de2bc: Download complete
+[2026-11-11T10:51:02.917Z] fd59700bd496: Download complete
+[2026-11-11T10:51:03.016Z] 9ceaee0fe102: Download complete
+[2026-11-11T10:51:03.023Z] a2d562850546: Pull complete
+[2026-11-11T10:51:03.423Z] 3473da8de2bc: Pull complete
+[2026-11-11T10:51:03.922Z] 3eeedf74acb3: Pull complete
+[2026-11-11T10:51:04.322Z] db1eb3dd5719: Pull complete
+[2026-11-11T10:51:07.223Z] 9ceaee0fe102: Pull complete
+[2026-11-11T10:51:07.320Z] 597eff22010b: Pull complete
+[2026-11-11T10:51:07.419Z] b61b4c11fc9a: Pull complete
+[2026-11-11T10:51:07.421Z] c815bcde552b: Pull complete
+[2026-11-11T10:51:13.905Z] 4f4fb700ef54: Pull complete
+[2026-11-11T10:51:13.905Z] 8c3356d10d6b: Pull complete
+[2026-11-11T10:51:13.908Z] fa31996ab869: Pull complete
+[2026-11-11T10:51:13.908Z] fd59700bd496: Pull complete
+[2026-11-11T10:51:13.908Z] Digest: sha256:fe058db9710840a4821f20190b3769e3ce709a049b8640aa2bf5f044969fe702
+[2026-11-11T10:51:13.908Z] Status: Downloaded newer image for ghcr.io/renovatebot/renovate@sha256:fe058db9710840a4821f20190b3769e3ce709a049b8640aa2bf5f044969fe702
+[2026-11-11T10:51:25.500Z]  INFO: Renovate started
+[2026-11-11T10:51:25.500Z]        "renovateVersion": "44.227.4"
+[2026-11-11T10:51:25.501Z] DEBUG: Using RE2 regex engine
+[2026-11-11T10:51:25.501Z] DEBUG: Parsing configs
+[2026-11-11T10:51:25.504Z] DEBUG: Checking for config file in config.js
+[2026-11-11T10:51:25.514Z] DEBUG: No additional config file found specified - skipping
+[2026-11-11T10:51:25.526Z] DEBUG: File config
+[2026-11-11T10:51:25.526Z]        "config": {
+[2026-11-11T10:51:25.526Z]          "platform": "github",
+[2026-11-11T10:51:25.526Z]          "repositoryCache": "enabled",
+[2026-11-11T10:51:25.526Z]          "allowedUnsafeExecutions": ["mise"],
+[2026-11-11T10:51:25.526Z]          "dependencyDashboardFooter": "- [ ] <!-- trigger-run --> Trigger a Renovate run - [workflow runs & logs ↗](https://github.com/idelsink/renovate-runner/actions/workflows/renovate.yaml)",
+[2026-11-11T10:51:25.526Z]          "onboardingConfig": {
+[2026-11-11T10:51:25.526Z]            "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+[2026-11-11T10:51:25.526Z]            "extends": ["github>idelsink/renovate-runner"]
+[2026-11-11T10:51:25.526Z]          }
+[2026-11-11T10:51:25.526Z]        }
+[2026-11-11T10:51:25.526Z] DEBUG: Additional file config
+[2026-11-11T10:51:25.526Z]        "config": {}
+[2026-11-11T10:51:25.526Z] DEBUG: CLI config
+[2026-11-11T10:51:25.526Z]        "config": {}
+[2026-11-11T10:51:25.527Z] DEBUG: Env config
+[2026-11-11T10:51:25.527Z]        "config": {
+[2026-11-11T10:51:25.527Z]          "hostRules": [],
+[2026-11-11T10:51:25.527Z]          "token": "***********",
+[2026-11-11T10:51:25.527Z]          "repositories": ["idelsink/bootstrap"]
+[2026-11-11T10:51:25.527Z]        }
+[2026-11-11T10:51:25.527Z] DEBUG: Resolved global extends
+[2026-11-11T10:51:25.527Z]        "config": undefined
+[2026-11-11T10:51:25.527Z] DEBUG: Combined config
+[2026-11-11T10:51:25.527Z]        "config": {
+[2026-11-11T10:51:25.527Z]          "platform": "github",
+[2026-11-11T10:51:25.527Z]          "repositoryCache": "enabled",
+[2026-11-11T10:51:25.527Z]          "allowedUnsafeExecutions": ["mise"],
+[2026-11-11T10:51:25.527Z]          "dependencyDashboardFooter": "- [ ] <!-- trigger-run --> Trigger a Renovate run - [workflow runs & logs ↗](https://github.com/idelsink/renovate-runner/actions/workflows/renovate.yaml)",
+[2026-11-11T10:51:25.527Z]          "onboardingConfig": {
+[2026-11-11T10:51:25.527Z]            "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+[2026-11-11T10:51:25.527Z]            "extends": ["github>idelsink/renovate-runner"]
+[2026-11-11T10:51:25.527Z]          },
+[2026-11-11T10:51:25.527Z]          "hostRules": [],
+[2026-11-11T10:51:25.527Z]          "token": "***********",
+[2026-11-11T10:51:25.527Z]          "repositories": ["idelsink/bootstrap"]
+[2026-11-11T10:51:25.527Z]        }
+[2026-11-11T10:51:25.527Z] DEBUG: Enabling forkProcessing while in non-autodiscover mode
+[2026-11-11T10:51:25.528Z] DEBUG: Enabling onboardingNoDeps while in non-autodiscover mode
+[2026-11-11T10:51:25.565Z] DEBUG: Found valid git version: 2.56.0
+[2026-11-11T10:51:25.567Z] DEBUG: Containerbase image version is compatible
+[2026-11-11T10:51:25.567Z]        "version": "14.66.16"
+[2026-11-11T10:51:25.567Z] DEBUG: Setting global hostRules
+[2026-11-11T10:51:25.572Z] DEBUG: Using default github endpoint: https://api.github.com/
+[2026-11-11T10:51:25.577Z] DEBUG: hostRules: authentication already set for api.github.com
+[2026-11-11T10:51:25.581Z] DEBUG: Using queue: host=api.github.com, concurrency=16
+[2026-11-11T10:51:25.877Z] DEBUG: Platform config
+[2026-11-11T10:51:25.877Z]        "platformConfig": {
+[2026-11-11T10:51:25.877Z]          "host": {"type": "github", "apiUrl": {}},
+[2026-11-11T10:51:25.877Z]          "isGHApp": true,
+[2026-11-11T10:51:25.877Z]          "userDetails": {
+[2026-11-11T10:51:25.877Z]            "username": "renovate-iws[bot]",
+[2026-11-11T10:51:25.877Z]            "name": "renovate-iws[bot]",
+[2026-11-11T10:51:25.877Z]            "id": 260228940,
+[2026-11-11T10:51:25.877Z]            "email": null
+[2026-11-11T10:51:25.877Z]          }
+[2026-11-11T10:51:25.877Z]        },
+[2026-11-11T10:51:25.877Z]        "renovateUsername": "renovate-iws[bot]"
+[2026-11-11T10:51:25.880Z] DEBUG: Using platform gitAuthor: renovate-iws[bot] <260228940+renovate-iws[bot]@users.noreply.github.com>
+[2026-11-11T10:51:25.881Z] DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+[2026-11-11T10:51:25.882Z] DEBUG: Using baseDir: /tmp/renovate
+[2026-11-11T10:51:25.882Z] DEBUG: Using cacheDir: /tmp/renovate/cache
+[2026-11-11T10:51:25.883Z] DEBUG: Using containerbaseDir: /tmp/renovate/cache/containerbase
+[2026-11-11T10:51:25.884Z] DEBUG: Initializing Renovate internal cache into /tmp/renovate/cache/renovate/renovate-cache-v1
+[2026-11-11T10:51:25.884Z] DEBUG: Commits limit = null
+[2026-11-11T10:51:25.884Z] DEBUG: Setting global hostRules
+[2026-11-11T10:51:25.887Z] DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+[2026-11-11T10:51:25.887Z] DEBUG: validatePresets()
+[2026-11-11T10:51:25.899Z] DEBUG: Reinitializing hostRules for repo
+[2026-11-11T10:51:25.899Z] DEBUG: Clearing hostRules
+[2026-11-11T10:51:25.899Z] DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+[2026-11-11T10:51:25.903Z]  INFO: Repository started (repository=idelsink/bootstrap)
+[2026-11-11T10:51:25.903Z]        "renovateVersion": "44.227.4"
+[2026-11-11T10:51:25.904Z] DEBUG: Using localDir: /tmp/renovate/repos/github/idelsink/bootstrap (repository=idelsink/bootstrap)
+[2026-11-11T10:51:25.904Z] DEBUG: PackageFiles.clear() - Package files deleted (repository=idelsink/bootstrap)
+[2026-11-11T10:51:25.906Z] DEBUG: initRepo("idelsink/bootstrap") (repository=idelsink/bootstrap)
+[2026-11-11T10:51:25.908Z] DEBUG: hostRules: authentication already set for api.github.com (repository=idelsink/bootstrap)
+[2026-11-11T10:51:25.908Z] DEBUG: Using queue: host=api.github.com, concurrency=16 (repository=idelsink/bootstrap)
+[2026-11-11T10:51:26.229Z] DEBUG: idelsink/bootstrap default branch = main (repository=idelsink/bootstrap)
+[2026-11-11T10:51:26.230Z] DEBUG: Issues cache: Adding 1 issues to reconcile queue (repository=idelsink/bootstrap)
+[2026-11-11T10:51:26.230Z] DEBUG: Using app token for git init (repository=idelsink/bootstrap)
+[2026-11-11T10:51:26.231Z] DEBUG: fetchBranchCommits(): url=https://**redacted**@github.com/idelsink/bootstrap.git (repository=idelsink/bootstrap)
+[2026-11-11T10:51:26.789Z] DEBUG: Repository cache is restored from revision 13 (repository=idelsink/bootstrap)
+[2026-11-11T10:51:26.790Z] DEBUG: Resetting npmrc (repository=idelsink/bootstrap)
+[2026-11-11T10:51:26.790Z] DEBUG: Resetting npmrc (repository=idelsink/bootstrap)
+[2026-11-11T10:51:26.790Z] DEBUG: checkOnboarding() (repository=idelsink/bootstrap)
+[2026-11-11T10:51:26.791Z] DEBUG: isOnboarded() (repository=idelsink/bootstrap)
+[2026-11-11T10:51:26.791Z] DEBUG: findPr(renovate/configure, Configure Renovate, !open) (repository=idelsink/bootstrap)
+[2026-11-11T10:51:26.792Z] DEBUG: PR cache: sync fetch (repository=idelsink/bootstrap)
+[2026-11-11T10:51:27.174Z] DEBUG: http cache: saving https://api.github.com/repos/idelsink/bootstrap/pulls?per_page=20&state=all&sort=updated&direction=desc&page=1 (etag=W/"04b4302ac9c43cf60f4130610279d2eb24448d7f8da65e81267e03433aa503db", lastModified=undefined) (repository=idelsink/bootstrap)
+[2026-11-11T10:51:27.175Z] DEBUG: PR cache: Filtered 1 PRs to 1 (user=renovate-iws[bot]) (repository=idelsink/bootstrap)
+[2026-11-11T10:51:27.178Z] DEBUG: PR cache: getPrList success (repository=idelsink/bootstrap)
+[2026-11-11T10:51:27.178Z]        "pullsTotal": 1,
+[2026-11-11T10:51:27.178Z]        "requestsTotal": 1,
+[2026-11-11T10:51:27.178Z]        "apiQuotaAffected": true,
+[2026-11-11T10:51:27.178Z]        "durationMs": 386
+[2026-11-11T10:51:27.178Z] DEBUG: Found PR #1 (repository=idelsink/bootstrap)
+[2026-11-11T10:51:27.178Z] DEBUG: Checking cached config file name (repository=idelsink/bootstrap)
+[2026-11-11T10:51:27.357Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/bootstrap/contents/renovate.json from 2026-11-10T11:05:44.425Z (repository=idelsink/bootstrap)
+[2026-11-11T10:51:27.360Z] DEBUG: Existing config file confirmed (repository=idelsink/bootstrap)
+[2026-11-11T10:51:27.360Z] DEBUG: Repository config (repository=idelsink/bootstrap)
+[2026-11-11T10:51:27.360Z]        "fileName": "renovate.json",
+[2026-11-11T10:51:27.360Z]        "config": {
+[2026-11-11T10:51:27.360Z]          "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+[2026-11-11T10:51:27.360Z]          "extends": ["github>idelsink/renovate-runner"]
+[2026-11-11T10:51:27.360Z]        }
+[2026-11-11T10:51:27.360Z] DEBUG: Repo is onboarded (repository=idelsink/bootstrap)
+[2026-11-11T10:51:27.474Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/bootstrap/contents/renovate.json from 2026-11-11T10:51:27.357Z (repository=idelsink/bootstrap)
+[2026-11-11T10:51:27.474Z] DEBUG: migrateAndValidate() (repository=idelsink/bootstrap)
+[2026-11-11T10:51:27.474Z] DEBUG: No config migration necessary (repository=idelsink/bootstrap)
+[2026-11-11T10:51:27.637Z] DEBUG: http cache: saving https://api.github.com/repos/idelsink/renovate-runner/contents/default.json (etag="ab5d9e598fc24de1b07c8fdaa982411812447264", lastModified=Tue, 10 Nov 2026 22:51:25 GMT) (repository=idelsink/bootstrap)
+[2026-11-11T10:51:27.647Z] DEBUG: Resolved shallow config, without merging internal presets (repository=idelsink/bootstrap)
+[2026-11-11T10:51:27.647Z]        "renovateVersion": "44.227.4",
+[2026-11-11T10:51:27.647Z]        "config": {
+[2026-11-11T10:51:27.647Z]          "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+[2026-11-11T10:51:27.647Z]          "schedule": ["before 6am on Monday"],
+[2026-11-11T10:51:27.647Z]          "prConcurrentLimit": 5,
+[2026-11-11T10:51:27.647Z]          "postUpdateOptions": ["npmInstallTwice"],
+[2026-11-11T10:51:27.647Z]          "customManagers": [
+[2026-11-11T10:51:27.647Z]            {
+[2026-11-11T10:51:27.647Z]              "customType": "regex",
+[2026-11-11T10:51:27.647Z]              "description": [
+[2026-11-11T10:51:27.647Z]                "Container image references with digest pinning (registry/image:1.2.3@shaabc123...), annotated with # renovate: or // renovate:. Captures tag as currentValue and sha256 as currentDigest for atomic updates."
+[2026-11-11T10:51:27.647Z]              ],
+[2026-11-11T10:51:27.647Z]              "managerFilePatterns": ["/./"],
+[2026-11-11T10:51:27.647Z]              "matchStrings": [
+[2026-11-11T10:51:27.647Z]                "(?:#|//) renovate: datasource=(?<datasource>.*?)(?: depName=(?<depName>.+?))?(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?(?: extractVersion=(?<extractVersion>.+?))?(?: registryUrl=(?<registryUrl>.+?))?\\n\\s*[^=:\\n]+[=:]\\s*[\"']?[^:]+:(?<currentValue>[^\\s@\"']+)@(?<currentDigest>[^\\s\"']+)"
+[2026-11-11T10:51:27.647Z]              ],
+[2026-11-11T10:51:27.647Z]              "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver-coerced{{/if}}"
+[2026-11-11T10:51:27.647Z]            },
+[2026-11-11T10:51:27.647Z]            {
+[2026-11-11T10:51:27.647Z]              "customType": "regex",
+[2026-11-11T10:51:27.647Z]              "description": [
+[2026-11-11T10:51:27.647Z]                "Container image references with tag only (no digest), annotated with # renovate: or // renovate:. Matches key-value lines where the value is a registry/path:tag."
+[2026-11-11T10:51:27.647Z]              ],
+[2026-11-11T10:51:27.647Z]              "managerFilePatterns": ["/./"],
+[2026-11-11T10:51:27.647Z]              "matchStrings": [
+[2026-11-11T10:51:27.647Z]                "(?:#|//) renovate: datasource=(?<datasource>.*?)(?: depName=(?<depName>.+?))?(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?(?: extractVersion=(?<extractVersion>.+?))?(?: registryUrl=(?<registryUrl>.+?))?\\n\\s*[^=:\\n]+[=:]\\s*[\"']?[^:]+:(?<currentValue>[^\\s@\"']+)(?:[\"'\\s]|$)"
+[2026-11-11T10:51:27.647Z]              ],
+[2026-11-11T10:51:27.647Z]              "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver-coerced{{/if}}"
+[2026-11-11T10:51:27.647Z]            },
+[2026-11-11T10:51:27.647Z]            {
+[2026-11-11T10:51:27.647Z]              "customType": "regex",
+[2026-11-11T10:51:27.647Z]              "description": [
+[2026-11-11T10:51:27.647Z]                "Plain version strings annotated with # renovate: or // renovate:. Handles both assignment (KEY=) and key-value (key:) styles for any datasource."
+[2026-11-11T10:51:27.647Z]              ],
+[2026-11-11T10:51:27.647Z]              "managerFilePatterns": ["/./"],
+[2026-11-11T10:51:27.647Z]              "matchStrings": [
+[2026-11-11T10:51:27.647Z]                "(?:#|//) renovate: datasource=(?<datasource>.*?)(?: depName=(?<depName>.+?))?(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?(?: extractVersion=(?<extractVersion>.+?))?(?: registryUrl=(?<registryUrl>.+?))?\\n\\s*[^=:\\n]+[=:]\\s*[\"']?(?<currentValue>[^\\s@\"'#:]+)(?:[\"'\\s]|$)"
+[2026-11-11T10:51:27.647Z]              ],
+[2026-11-11T10:51:27.647Z]              "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver-coerced{{/if}}"
+[2026-11-11T10:51:27.647Z]            }
+[2026-11-11T10:51:27.647Z]          ],
+[2026-11-11T10:51:27.647Z]          "packageRules": [
+[2026-11-11T10:51:27.647Z]            {
+[2026-11-11T10:51:27.647Z]              "description": [
+[2026-11-11T10:51:27.647Z]                "Ensure github-actions inline comments always use full vX.Y.Z semver tags"
+[2026-11-11T10:51:27.647Z]              ],
+[2026-11-11T10:51:27.647Z]              "matchManagers": ["github-actions"],
+[2026-11-11T10:51:27.647Z]              "matchDepTypes": ["action"],
+[2026-11-11T10:51:27.647Z]              "extractVersion": "^(?<version>v?\\d+\\.\\d+\\.\\d+)$",
+[2026-11-11T10:51:27.648Z]              "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$"
+[2026-11-11T10:51:27.648Z]            },
+[2026-11-11T10:51:27.648Z]            {
+[2026-11-11T10:51:27.648Z]              "description": [
+[2026-11-11T10:51:27.648Z]                "Disable digest pinning for regex manager deps without a currentDigest capture group"
+[2026-11-11T10:51:27.648Z]              ],
+[2026-11-11T10:51:27.648Z]              "matchManagers": ["custom.regex"],
+[2026-11-11T10:51:27.648Z]              "matchUpdateTypes": ["pin", "pinDigest"],
+[2026-11-11T10:51:27.648Z]              "enabled": false
+[2026-11-11T10:51:27.648Z]            },
+[2026-11-11T10:51:27.648Z]            {
+[2026-11-11T10:51:27.648Z]              "description": ["Disable digest pinning for kustomize OCI helmCharts"],
+[2026-11-11T10:51:27.648Z]              "matchManagers": ["kustomize"],
+[2026-11-11T10:51:27.648Z]              "matchDepTypes": ["HelmChart"],
+[2026-11-11T10:51:27.648Z]              "matchUpdateTypes": ["pin", "pinDigest"],
+[2026-11-11T10:51:27.648Z]              "enabled": false
+[2026-11-11T10:51:27.648Z]            }
+[2026-11-11T10:51:27.648Z]          ]
+[2026-11-11T10:51:27.648Z]        },
+[2026-11-11T10:51:27.648Z]        "visitedPresets": {
+[2026-11-11T10:51:27.648Z]          "merged": ["github>idelsink/renovate-runner"],
+[2026-11-11T10:51:27.648Z]          "unmerged": ["config:best-practices"]
+[2026-11-11T10:51:27.648Z]        }
+[2026-11-11T10:51:28.473Z] DEBUG: Found repo ignorePaths (repository=idelsink/bootstrap)
+[2026-11-11T10:51:28.473Z]        "ignorePaths": [
+[2026-11-11T10:51:28.473Z]          "**/node_modules/**",
+[2026-11-11T10:51:28.473Z]          "**/bower_components/**",
+[2026-11-11T10:51:28.473Z]          "**/vendor/**",
+[2026-11-11T10:51:28.473Z]          "**/examples/**",
+[2026-11-11T10:51:28.473Z]          "**/__tests__/**",
+[2026-11-11T10:51:28.473Z]          "**/test/**",
+[2026-11-11T10:51:28.473Z]          "**/tests/**",
+[2026-11-11T10:51:28.473Z]          "**/__fixtures__/**"
+[2026-11-11T10:51:28.473Z]        ]
+[2026-11-11T10:51:28.659Z] DEBUG: GET https://api.github.com/repos/idelsink/bootstrap/dependabot/alerts?state=open&direction=asc&per_page=100 = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=403 retryCount=0, duration=154) (repository=idelsink/bootstrap)
+[2026-11-11T10:51:28.660Z] DEBUG: GitHub failure: Resource not accessible by integration (repository=idelsink/bootstrap)
+[2026-11-11T10:51:28.660Z]        "err": {
+[2026-11-11T10:51:28.660Z]          "name": "HTTPError",
+[2026-11-11T10:51:28.660Z]          "code": "ERR_NON_2XX_3XX_RESPONSE",
+[2026-11-11T10:51:28.660Z]          "timings": {
+[2026-11-11T10:51:28.660Z]            "start": 1794394288502,
+[2026-11-11T10:51:28.660Z]            "socket": 1794394288502,
+[2026-11-11T10:51:28.660Z]            "lookup": 1794394288502,
+[2026-11-11T10:51:28.660Z]            "connect": 1794394288502,
+[2026-11-11T10:51:28.660Z]            "secureConnect": 1794394288502,
+[2026-11-11T10:51:28.660Z]            "upload": 1794394288502,
+[2026-11-11T10:51:28.660Z]            "response": 1794394288655,
+[2026-11-11T10:51:28.660Z]            "end": 1794394288656,
+[2026-11-11T10:51:28.660Z]            "phases": {
+[2026-11-11T10:51:28.660Z]              "wait": 0,
+[2026-11-11T10:51:28.660Z]              "dns": 24,
+[2026-11-11T10:51:28.661Z]              "tcp": 24,
+[2026-11-11T10:51:28.661Z]              "tls": 27,
+[2026-11-11T10:51:28.661Z]              "request": 0,
+[2026-11-11T10:51:28.661Z]              "firstByte": 153,
+[2026-11-11T10:51:28.661Z]              "download": 1,
+[2026-11-11T10:51:28.661Z]              "total": 154
+[2026-11-11T10:51:28.661Z]            }
+[2026-11-11T10:51:28.661Z]          },
+[2026-11-11T10:51:28.661Z]          "options": {
+[2026-11-11T10:51:28.661Z]            "headers": {
+[2026-11-11T10:51:28.661Z]              "user-agent": "Renovate/44.227.4 (https://github.com/renovatebot/renovate)",
+[2026-11-11T10:51:28.661Z]              "accept": "application/vnd.github+json, application/vnd.github.v3+json",
+[2026-11-11T10:51:28.661Z]              "authorization": "***********",
+[2026-11-11T10:51:28.661Z]              "accept-encoding": "gzip, deflate, br, zstd"
+[2026-11-11T10:51:28.661Z]            },
+[2026-11-11T10:51:28.661Z]            "url": "https://api.github.com/repos/idelsink/bootstrap/dependabot/alerts?state=open&direction=asc&per_page=100",
+[2026-11-11T10:51:28.661Z]            "hostType": "github",
+[2026-11-11T10:51:28.661Z]            "username": "",
+[2026-11-11T10:51:28.661Z]            "password": "",
+[2026-11-11T10:51:28.661Z]            "method": "GET",
+[2026-11-11T10:51:28.661Z]            "http2": false
+[2026-11-11T10:51:28.661Z]          },
+[2026-11-11T10:51:28.661Z]          "message": "Request failed with status code 403 (Forbidden): GET https://api.github.com/repos/idelsink/bootstrap/dependabot/alerts?state=open&direction=asc&per_page=100",
+[2026-11-11T10:51:28.661Z]          "response": {
+[2026-11-11T10:51:28.661Z]            "statusCode": 403,
+[2026-11-11T10:51:28.661Z]            "statusMessage": "Forbidden",
+[2026-11-11T10:51:28.661Z]            "body": {
+[2026-11-11T10:51:28.661Z]              "message": "Resource not accessible by integration",
+[2026-11-11T10:51:28.661Z]              "documentation_url": "https://docs.github.com/rest/dependabot/alerts#list-dependabot-alerts-for-a-repository",
+[2026-11-11T10:51:28.661Z]              "status": "403"
+[2026-11-11T10:51:28.661Z]            },
+[2026-11-11T10:51:28.661Z]            "headers": {
+[2026-11-11T10:51:28.661Z]              "date": "Wed, 11 Nov 2026 10:51:28 GMT",
+[2026-11-11T10:51:28.661Z]              "content-type": "application/json; charset=utf-8",
+[2026-11-11T10:51:28.661Z]              "x-github-media-type": "github.v3; format=json",
+[2026-11-11T10:51:28.661Z]              "x-accepted-github-permissions": "vulnerability_alerts=read",
+[2026-11-11T10:51:28.661Z]              "x-github-api-version-selected": "2022-11-28",
+[2026-11-11T10:51:28.661Z]              "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning",
+[2026-11-11T10:51:28.661Z]              "access-control-allow-origin": "*",
+[2026-11-11T10:51:28.661Z]              "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+[2026-11-11T10:51:28.661Z]              "x-frame-options": "deny",
+[2026-11-11T10:51:28.661Z]              "x-content-type-options": "nosniff",
+[2026-11-11T10:51:28.661Z]              "x-xss-protection": "0",
+[2026-11-11T10:51:28.661Z]              "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+[2026-11-11T10:51:28.661Z]              "content-security-policy": "default-src 'none'",
+[2026-11-11T10:51:28.661Z]              "vary": "Accept-Encoding, Accept, X-Requested-With",
+[2026-11-11T10:51:28.661Z]              "transfer-encoding": "chunked",
+[2026-11-11T10:51:28.661Z]              "x-github-request-id": "A818:1E7A17:407FB51:CA400EA:6AF448AF",
+[2026-11-11T10:51:28.661Z]              "x-github-edge-region": "iad",
+[2026-11-11T10:51:28.661Z]              "server": "github.com",
+[2026-11-11T10:51:28.661Z]              "x-ratelimit-limit": "7050",
+[2026-11-11T10:51:28.661Z]              "x-ratelimit-remaining": "6941",
+[2026-11-11T10:51:28.661Z]              "x-ratelimit-reset": "1794397846",
+[2026-11-11T10:51:28.661Z]              "x-ratelimit-used": "109",
+[2026-11-11T10:51:28.661Z]              "x-ratelimit-resource": "core"
+[2026-11-11T10:51:28.661Z]            },
+[2026-11-11T10:51:28.661Z]            "httpVersion": "1.1",
+[2026-11-11T10:51:28.661Z]            "retryCount": 0
+[2026-11-11T10:51:28.661Z]          }
+[2026-11-11T10:51:28.661Z]        }
+[2026-11-11T10:51:28.661Z]        HTTPError: Request failed with status code 403 (Forbidden): GET https://**redacted**@16.2.0/node_modules/got/dist/source/as-promise/index.js:143:46
+[2026-11-11T10:51:28.661Z]            at Request.<anonymous> (file:///usr/local/renovate/node_modules/.pnpm/got@16.2.0/node_modules/got/dist/source/as-promise/index.js:147:19)
+[2026-11-11T10:51:28.661Z]            at Request.wrapper (node:events:639:12)
+[2026-11-11T10:51:28.661Z]            at Request.emit (node:events:514:28)
+[2026-11-11T10:51:28.661Z]            at Request.emit (node:domain:489:12)
+[2026-11-11T10:51:28.661Z]            at Request._onResponseBase (file:///usr/local/renovate/node_modules/.pnpm/got@16.2.0/node_modules/got/dist/source/core/index.js:1272:22)
+[2026-11-11T10:51:28.661Z]            at processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-11-11T10:51:28.661Z]            at Request._onResponse (file:///usr/local/renovate/node_modules/.pnpm/got@16.2.0/node_modules/got/dist/source/core/index.js:1348:13)
+[2026-11-11T10:51:28.672Z] DEBUG: Error retrieving vulnerability alerts (repository=idelsink/bootstrap)
+[2026-11-11T10:51:28.672Z]        "err": {"message": "integration-unauthorized"}
+[2026-11-11T10:51:28.672Z]        Error: integration-unauthorized
+[2026-11-11T10:51:28.672Z]            at handleGotError (file:///usr/local/renovate/lib/util/http/github.ts:207:12)
+[2026-11-11T10:51:28.672Z]            at GithubHttp.handleError (file:///usr/local/renovate/lib/util/http/github.ts:456:11)
+[2026-11-11T10:51:28.672Z]            at GithubHttp.request (file:///usr/local/renovate/lib/util/http/http.ts:370:12)
+[2026-11-11T10:51:28.672Z]            at processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-11-11T10:51:28.672Z]            at GithubHttp.requestJsonUnsafe (file:///usr/local/renovate/lib/util/http/github.ts:470:20)
+[2026-11-11T10:51:28.672Z]            at GithubHttp.requestJson (file:///usr/local/renovate/lib/util/http/http.ts:489:17)
+[2026-11-11T10:51:28.672Z]            at Proxy.getVulnerabilityAlerts (file:///usr/local/renovate/lib/modules/platform/github/index.ts:2401:7)
+[2026-11-11T10:51:28.672Z]            at detectVulnerabilityAlerts (file:///usr/local/renovate/lib/workers/repository/init/vulnerability.ts:60:18)
+[2026-11-11T10:51:28.672Z]            at initRepo (file:///usr/local/renovate/lib/workers/repository/init/index.ts:72:12)
+[2026-11-11T10:51:28.672Z]            at instrument.attributes (file:///usr/local/renovate/lib/workers/repository/index.ts:87:18)
+[2026-11-11T10:51:28.672Z]            at renovateRepository (file:///usr/local/renovate/lib/workers/repository/index.ts:62:39)
+[2026-11-11T10:51:28.672Z]            at instrument.attributes (file:///usr/local/renovate/lib/workers/global/index.ts:241:13)
+[2026-11-11T10:51:28.672Z]            at start (file:///usr/local/renovate/lib/workers/global/index.ts:222:7)
+[2026-11-11T10:51:28.672Z]            at file:///usr/local/renovate/lib/renovate.ts:29:22
+[2026-11-11T10:51:28.672Z]  WARN: Cannot access vulnerability alerts. Please ensure permissions have been granted. (repository=idelsink/bootstrap)
+[2026-11-11T10:51:28.672Z]        "url": "https://docs.renovatebot.com/configuration-options/#vulnerabilityalerts"
+[2026-11-11T10:51:28.672Z] DEBUG: No vulnerability alerts found (repository=idelsink/bootstrap)
+[2026-11-11T10:51:28.672Z] DEBUG: No vulnerability alerts found (repository=idelsink/bootstrap)
+[2026-11-11T10:51:28.674Z] DEBUG: findIssue(Dependency Dashboard) (repository=idelsink/bootstrap)
+[2026-11-11T10:51:28.674Z] DEBUG: Issues cache: Done reconciling by iterating over all items (repository=idelsink/bootstrap)
+[2026-11-11T10:51:28.674Z] DEBUG: Issues cache: synced (repository=idelsink/bootstrap)
+[2026-11-11T10:51:28.674Z] DEBUG: Found issue 2 (repository=idelsink/bootstrap)
+[2026-11-11T10:51:28.923Z] DEBUG: http cache: saving https://api.github.com/repos/idelsink/bootstrap/issues/2 (etag=W/"6156bf4951cf50c30c1abfff87430f271dc97cec94d493b03b3cda9e06c83931", lastModified=Wed, 11 Nov 2026 10:50:58 GMT) (repository=idelsink/bootstrap)
+[2026-11-11T10:51:28.924Z] DEBUG: Issues cache: Updating issue 2 in cache (repository=idelsink/bootstrap)
+[2026-11-11T10:51:28.925Z] DEBUG: No baseBranches (repository=idelsink/bootstrap)
+[2026-11-11T10:51:28.925Z] DEBUG: extract() (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.007Z] DEBUG: Cached extract for sha=f4253d7430a4aade09ea53bde20671892193b0f6 is valid and can be used (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.008Z]  INFO: Dependency extraction complete (repository=idelsink/bootstrap, baseBranch=main)
+[2026-11-11T10:51:29.008Z]        "stats": {
+[2026-11-11T10:51:29.008Z]          "managers": {"renovate-config": {"fileCount": 1, "depCount": 1}},
+[2026-11-11T10:51:29.008Z]          "total": {"fileCount": 1, "depCount": 1}
+[2026-11-11T10:51:29.008Z]        }
+[2026-11-11T10:51:29.010Z] DEBUG: PackageFiles.add() - Package file saved for base branch (repository=idelsink/bootstrap, baseBranch=main)
+[2026-11-11T10:51:29.010Z] DEBUG: Package releases lookups complete (repository=idelsink/bootstrap, baseBranch=main)
+[2026-11-11T10:51:29.010Z] DEBUG: Repository libYears (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.010Z]        "libYears": {"managers": {"renovate-config": 0}, "total": 0},
+[2026-11-11T10:51:29.010Z]        "dependencyStatus": {"outdated": 0, "total": 1}
+[2026-11-11T10:51:29.011Z] DEBUG: branchifyUpgrades (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.012Z] DEBUG: detectSemanticCommits() (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.012Z] DEBUG: semanticCommits: returning "disabled" from cache (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.012Z] DEBUG: 0 flattened updates found:  (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.013Z] DEBUG: Returning 0 branch(es) (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.013Z] DEBUG: config.repoIsOnboarded=true (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.013Z] DEBUG: packageFiles with updates (repository=idelsink/bootstrap, baseBranch=main)
+[2026-11-11T10:51:29.013Z]        "config": {
+[2026-11-11T10:51:29.013Z]          "renovate-config": [
+[2026-11-11T10:51:29.013Z]            {
+[2026-11-11T10:51:29.013Z]              "deps": [
+[2026-11-11T10:51:29.013Z]                {
+[2026-11-11T10:51:29.013Z]                  "depName": "idelsink/renovate-runner",
+[2026-11-11T10:51:29.013Z]                  "packageName": "idelsink/renovate-runner",
+[2026-11-11T10:51:29.013Z]                  "skipReason": "unspecified-version",
+[2026-11-11T10:51:29.013Z]                  "updates": []
+[2026-11-11T10:51:29.013Z]                }
+[2026-11-11T10:51:29.014Z]              ],
+[2026-11-11T10:51:29.014Z]              "packageFile": "renovate.json"
+[2026-11-11T10:51:29.014Z]            }
+[2026-11-11T10:51:29.014Z]          ]
+[2026-11-11T10:51:29.014Z]        }
+[2026-11-11T10:51:29.014Z] DEBUG: detectSemanticCommits() (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.014Z] DEBUG: semanticCommits: returning "disabled" from cache (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.014Z] DEBUG: processRepo() (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.014Z] DEBUG: Processing 0 branches:  (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.015Z] DEBUG: 0 PRs are currently open (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.015Z] DEBUG: ConcurrentPRs count = 0 (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.015Z] DEBUG: 0 PRs are currently open (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.015Z] DEBUG: VulnerabilityConcurrentPRs count = 0 (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.015Z] DEBUG: 0 already existing branches found. (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.015Z] DEBUG: Branches count = 0 (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.016Z] DEBUG: 0 already existing branches found. (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.016Z] DEBUG: VulnerabilityBranches count = 0 (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.016Z] DEBUG: Calculating PRs created so far in this hour currentHourStart=2026-11-11T10:00:00.000Z (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.017Z] DEBUG: 0 PRs have been created so far in this hour. (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.017Z] DEBUG: HourlyPRs count = 0 (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.017Z] DEBUG: Calculating commits so far in this hour currentHourStart=2026-11-11T10:00:00.000Z, for 0 branches (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.018Z] DEBUG: 0 commits so far in this hour. (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.018Z] DEBUG: HourlyCommits count = 0 (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.184Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/bootstrap/contents/renovate.json from 2026-11-11T10:51:27.473Z (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.185Z] DEBUG: Config does not need migration (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.186Z] DEBUG: ensureDependencyDashboard() (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.186Z] DEBUG: Ensuring Dependency Dashboard (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.186Z] DEBUG: Checking packageFiles for deprecated or replacement packages (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.452Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/bootstrap/issues/2 from 2026-11-11T10:51:28.923Z (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.452Z] DEBUG: Issues cache: Updating issue 2 in cache (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.796Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/bootstrap/issues/2 from 2026-11-11T10:51:29.451Z (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.797Z] DEBUG: Issues cache: Updating issue 2 in cache (repository=idelsink/bootstrap)
+[2026-11-11T10:51:29.810Z] DEBUG: ensureIssue(Dependency Dashboard) (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.102Z] DEBUG: http cache: Using cached response: https://api.github.com/repos/idelsink/bootstrap/issues/2 from 2026-11-11T10:51:29.796Z (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.102Z] DEBUG: Issues cache: Updating issue 2 in cache (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.102Z] DEBUG: Issue is open and up to date - nothing to do (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.102Z] DEBUG: checkReconfigureBranch() (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.103Z] DEBUG: No reconfigure branch found (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.103Z]        "reconfigureBranch": "renovate/reconfigure"
+[2026-11-11T10:51:30.103Z] DEBUG: Removing any stale branches (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.103Z] DEBUG: config.repoIsOnboarded=true (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.104Z] DEBUG: No renovate branches found (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.114Z] DEBUG: PackageFiles.clear() - Package files deleted (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.115Z] DEBUG: Branch summary (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.115Z]        "cacheModified": true,
+[2026-11-11T10:51:30.115Z]        "baseBranches": [{"branchName": "main", "sha": "f4253d7430a4aade09ea53bde20671892193b0f6"}],
+[2026-11-11T10:51:30.115Z]        "branches": [],
+[2026-11-11T10:51:30.115Z]        "defaultBranch": "main",
+[2026-11-11T10:51:30.115Z]        "inactiveBranches": []
+[2026-11-11T10:51:30.115Z] DEBUG: Renovate repository PR statistics (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.115Z]        "stats": {"total": 0, "open": 0, "closed": 0, "merged": 0},
+[2026-11-11T10:51:30.115Z]        "lastPRMergedAt": undefined
+[2026-11-11T10:51:30.116Z] DEBUG: Repository result: done, status: onboarded, enabled: true, onboarded: true (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.116Z] DEBUG: repository problems (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.116Z]        "repoProblems": [
+[2026-11-11T10:51:30.116Z]          "⚠️ WARN: Cannot access vulnerability alerts. Please ensure permissions have been granted."
+[2026-11-11T10:51:30.116Z]        ]
+[2026-11-11T10:51:30.117Z] DEBUG: Repository timing splits (milliseconds) (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.117Z]        "splits": {"init": 2773, "onboarding": 1, "extract": 336, "lookup": 5, "update": 3},
+[2026-11-11T10:51:30.117Z]        "total": 4217
+[2026-11-11T10:51:30.117Z] DEBUG: Package cache statistics (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.117Z]        "get": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0},
+[2026-11-11T10:51:30.117Z]        "set": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0}
+[2026-11-11T10:51:30.118Z] DEBUG: HTTP statistics (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.118Z]        "hosts": {
+[2026-11-11T10:51:30.118Z]          "api.github.com": {
+[2026-11-11T10:51:30.118Z]            "count": 11,
+[2026-11-11T10:51:30.118Z]            "reqAvgMs": 235,
+[2026-11-11T10:51:30.118Z]            "reqMedianMs": 246,
+[2026-11-11T10:51:30.118Z]            "reqMaxMs": 376,
+[2026-11-11T10:51:30.118Z]            "queueAvgMs": 0,
+[2026-11-11T10:51:30.118Z]            "queueMedianMs": 0,
+[2026-11-11T10:51:30.118Z]            "queueMaxMs": 2
+[2026-11-11T10:51:30.118Z]          }
+[2026-11-11T10:51:30.118Z]        },
+[2026-11-11T10:51:30.118Z]        "requests": 11
+[2026-11-11T10:51:30.118Z] DEBUG: HTTP cache statistics (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.118Z]        "https://api.github.com": {
+[2026-11-11T10:51:30.118Z]          "/repos/idelsink/bootstrap/contents/renovate.json": {"hit": 3, "miss": 0},
+[2026-11-11T10:51:30.118Z]          "/repos/idelsink/bootstrap/issues/2": {"hit": 3, "miss": 1},
+[2026-11-11T10:51:30.118Z]          "/repos/idelsink/bootstrap/pulls": {"hit": 0, "miss": 1},
+[2026-11-11T10:51:30.118Z]          "/repos/idelsink/renovate-runner/contents/default.json": {"hit": 0, "miss": 1}
+[2026-11-11T10:51:30.118Z]        }
+[2026-11-11T10:51:30.119Z] DEBUG: Lookup statistics (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.119Z] DEBUG: getReleases statistics summary (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.119Z]        "stats": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0},
+[2026-11-11T10:51:30.119Z]        "datasources": {}
+[2026-11-11T10:51:30.119Z] DEBUG: Cache fallback URLs (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.119Z]        "count": 0,
+[2026-11-11T10:51:30.119Z]        "hits": {}
+[2026-11-11T10:51:30.120Z] DEBUG: Git operations statistics (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.120Z]        "other": {
+[2026-11-11T10:51:30.120Z]          "count": 1,
+[2026-11-11T10:51:30.120Z]          "avgMs": 553,
+[2026-11-11T10:51:30.120Z]          "medianMs": 553.451264,
+[2026-11-11T10:51:30.120Z]          "maxMs": 553.451264,
+[2026-11-11T10:51:30.120Z]          "totalMs": 554
+[2026-11-11T10:51:30.120Z]        }
+[2026-11-11T10:51:30.120Z]  INFO: Repository finished (repository=idelsink/bootstrap)
+[2026-11-11T10:51:30.120Z]        "cloned": false,
+[2026-11-11T10:51:30.120Z]        "durationMs": 4217,
+[2026-11-11T10:51:30.120Z]        "result": "done",
+[2026-11-11T10:51:30.120Z]        "status": "onboarded",
+[2026-11-11T10:51:30.120Z]        "enabled": true,
+[2026-11-11T10:51:30.120Z]        "onboarded": true,
+[2026-11-11T10:51:30.120Z]        "exitCode": 0
+[2026-11-11T10:51:30.121Z] DEBUG: Checking file package cache for expired items
+[2026-11-11T10:51:30.128Z] DEBUG: Cache GC: kept 0 content entries (0 bytes), removed 0 orphaned (0 bytes) in 6ms
+[2026-11-11T10:51:30.128Z] DEBUG: Deleted 0 of 0 file cached entries in 8ms
